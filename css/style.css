@@ -1,0 +1,365 @@
+@font-face {
+    font-family: Counter;
+    src: url(../resources/tipografia/CounterStreamDemoRegular.ttf);
+}
+
+@font-face {
+    font-family: Cronus;
+    src: url(../resources/tipografia/Cronus\ Round.otf);
+}
+
+@font-face {
+    font-family: Queen;
+    src: url(../resources/tipografia/Queen\ of\ Camelot\ 2.0\ demo.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+p {
+    color: white;
+    font-family: Cronus;
+
+}
+
+/*nav*/
+
+/* pisar bs */
+.navbar {
+    position: sticky;
+    top: 0;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar .container-fluid {
+    background-color: #0ad803;
+}
+
+.container-fluid a {
+    text-decoration: none;
+    color: white;
+    font-family: Queen;
+}
+
+.buscador {
+    color: white;
+}
+
+.margen-bar{
+    padding: 0;
+}
+
+
+
+
+/* footer */
+
+footer {
+    height: 150px;
+    background-color: #00B4D8;
+}
+
+footer li {
+    display: inline;
+    padding-left: 20%;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+    font-family: Queen;
+}
+
+footer a {
+    font-size: 15px;
+}
+
+/* main index*/
+
+
+/* todo al centro */
+.ancho-novedades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-principal video {
+    height: 500px;
+}
+
+/* fondo todo */
+.pagina-uno {
+    background-color: black;
+}
+
+.noticias-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 3fr 1fr;
+    grid-template-areas:
+        "not-uno not-dos aside-uno"
+        "not-tres not-cuatro aside-uno"
+        "not-cinco not-seis aside-uno"
+
+}
+
+.noticia-uno {
+    grid-area: not-uno;
+    border: 2px solid white;
+    margin: 20px;
+    position: static
+}
+
+.noticia-dos {
+    grid-area: not-dos;
+    border: 2px solid white;
+    margin: 20px;
+    position: static
+}
+
+.noticia-tres {
+    grid-area: not-tres;
+    margin: 20px;
+    position: static
+}
+
+.noticia-cuatro {
+    grid-area: not-cuatro;
+    margin: 20px;
+    position: static
+}
+
+.noticia-cinco {
+    grid-area: not-cinco;
+    margin: 20px;
+    position: static
+}
+
+.noticia-seis {
+    grid-area: not-seis;
+    margin: 20px;
+    position: static
+}
+
+.proximos-lanzamientos {
+    grid-area: aside-uno;
+    background-color: gray;
+    border-radius: 3%;
+    margin: 20px;
+
+}
+
+
+h1 {
+    font-family: Counter;
+    font-size: 50px;
+    color: white;
+    background-color: aqua;
+    display: inline-block;
+    border-radius: 20%;
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: Counter;
+}
+
+h3 {
+
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: Queen;
+    font-size: 30px;
+}
+
+h4 {
+    display: block;
+    text-align: center;
+    font-family: Queen;
+}
+
+/* reviews */
+.descripcion {
+    width: 60%;
+    margin-top: 10px;
+}
+
+.titular {
+    font-family: Cronus;
+    font-size: 30px
+}
+
+.analisis img {
+    margin-top: 25px;
+}
+
+.analisis {
+    padding-bottom: 60px;
+    margin-top: 50px;
+}
+
+/* contacto */
+
+.form input {
+    display: block;
+    height: 20px;
+    margin-top: 20px;
+}
+
+textarea {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.form p {
+    margin-top: 20px
+}
+
+/* nosotros */
+
+
+.nosotros img {
+    width: 300px;
+    height: 200px;
+}
+
+.nosotros p {
+    margin: 20px 0px 30px 0px;
+    width: 75%;
+}
+
+/* esports */
+
+.youtube-potg {
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    color: white;
+    margin: 15px 0px 15px 0px;
+}
+
+.fases p {
+    display: inline;
+}
+
+.torneos div {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.logo-torneo img {
+    width: 250px;
+    height: 300px;
+}
+
+.fases img {
+    width: 50px;
+    height: 50px;
+}
+
+/* galeria */
+
+.galeria img {
+    width: 500px;
+    height: 400px;
+    margin: 15px;
+}
+
+.pru {
+    margin: 0px;
+}
+
+
+
+@media (max-width: 1200px) {
+
+
+    /* index */
+
+    .imagen-principal video {
+        width: 95%;
+    }
+    .noticias-container {
+        display: grid;
+        grid-template-rows: 2fr 2fr 2fr 1fr;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:
+            "not-uno not-dos"
+            "not-tres not-cuatro"
+            "not-cinco not-seis"
+            "aside-uno aside-uno"
+
+    }
+
+}
+@media (max-width: 1030px) {
+
+    /* index */
+    
+    .noticias-container {
+        display: grid;
+        grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas:
+            "not-uno aside-uno"
+            "not-dos aside-uno"
+            "not-tres aside-uno"
+            "not-cuatro aside-uno"
+            "not-cinco ."
+            "not-seis ."
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    /* index */
+
+    .imagen-principal {
+        height: 320px;
+    }
+    .noticias-container {
+        display: grid;
+        grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "not-uno"
+            "not-dos"
+            "not-tres"
+            "not-cuatro"
+            "not-cinco "
+            "not-seis "
+            "aside-uno"
+    }
+
+
+}
+
+@media (max-width: 426px) {
+
+    /* index */
+
+    .imagen-principal {
+        height: 180px;
+    }
+}
