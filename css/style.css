@@ -216,6 +216,12 @@ h4 {
 
 /* contacto */
 
+.pagina-contacto{
+    background-color: black;
+}
+
+
+
 .form input {
     display: block;
     height: 20px;
