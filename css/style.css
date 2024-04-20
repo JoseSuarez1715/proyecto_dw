@@ -19,9 +19,6 @@
     padding: 0;
 }
 
-
-
-
 p {
     color: white;
     font-family: Cronus;
@@ -34,6 +31,7 @@ p {
 .navbar {
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .navbar-brand img {
@@ -240,25 +238,31 @@ h4 {
 
 .pagina-contacto {
     background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.carrusel-contacto{
+    width: 70%;
 }
 
 
-
-.form input {
-    display: block;
-    height: 20px;
-    margin-top: 20px;
-}
-
-textarea {
-    display: block;
+.formulario{
+    width: 50%;
     margin-bottom: 20px;
+}
+
+.mb-3{
     margin-top: 20px;
 }
 
-.form p {
-    margin-top: 20px
-}
+
+
+
+
 
 /* nosotros */
 
@@ -373,7 +377,9 @@ h4 {
         justify-content: space-evenly;
         align-content: center;
     }
-
+.formulario{
+    width: 75%;
+}
 
 
 }
