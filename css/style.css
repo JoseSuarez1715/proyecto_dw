@@ -272,6 +272,16 @@ h4 {
     margin-bottom: 20px;
 }
 
+.form-text {
+    color: white;
+    font-family: Cronus;
+}
+
+.form-label {
+    font-family: Cronus;
+    font-size: 1.2rem;
+}
+
 .mb-3 {
     margin-top: 20px;
 }
@@ -294,14 +304,14 @@ h4 {
     margin: 15px;
 }
 
-.nosotros h3{
+.nosotros h3 {
     font-size: 2rem;
     padding-top: 30px;
 }
 
-.nosotros .imagen-principal{
+.nosotros .imagen-principal {
     width: 70%;
-   
+
 }
 
 .nosotros p {
@@ -309,9 +319,7 @@ h4 {
     width: 75%;
 }
 
-.nosotros iframe{
-    padding: 0 50px;
-}
+
 
 /* pagina esports */
 
@@ -354,6 +362,9 @@ h4 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.galeria p {
     padding: 0 10px;
 }
 
@@ -454,13 +465,14 @@ h4 {
 
     h1 {
         font-size: 3rem;
-        top: 90px;
+        top: 0px;
     }
 
     /* index video*/
 
-    .imagen-principal {
-        height: 320px;
+    .imagen-principal video {
+        width: 100%;
+        height: auto;
     }
 
     /* index grid noticias */
@@ -520,13 +532,26 @@ h4 {
 
     }
 
+    /* galeria */
+
+    .galeria img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* nosotros */
+
+    .nosotros .imagen-principal {
+        width: 100%;
+        margin-top: 0;
+    }
+
 }
 
 @media (max-width: 426px) {
 
     h1 {
         font-size: 2rem;
-        top: 40px;
     }
 
     h2 {
@@ -535,12 +560,20 @@ h4 {
 
     /* index */
 
-    .imagen-principal {
-        height: 180px;
+    .imagen-principal video {
+        width: 100%;
+        height: auto;
     }
 
+    .proximos-lanzamientos {
+        height: 700px;
+    }
+
+    /* galeria */
+   
+
     .fotos-galeria img {
-        height:180px;
+        height: 180px;
     }
 
     .carrousel-galeria {
@@ -548,5 +581,16 @@ h4 {
         padding: 75px 10px;
     }
 
+    /* nosotros */
+
+    .nosotros iframe {
+        width: 85%;
+    }
+
+    /* contacto */
+
+    .carrusel-contacto {
+        width: 100%;
+    }
 
 }
