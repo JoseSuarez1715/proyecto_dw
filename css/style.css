@@ -39,7 +39,7 @@ p {
 }
 
 .navbar .container-fluid {
-    background-color: #0ad803;
+    background-image: linear-gradient(90deg,gray,rgb(18, 18, 119));
 }
 
 .container-fluid a {
@@ -63,7 +63,7 @@ p {
 
 footer {
     height: 150px;
-    background-color: #00B4D8;
+    background-image: linear-gradient(-90deg,gray,rgb(18, 18, 119));
 }
 
 footer ul{
@@ -130,6 +130,7 @@ h4 {
 
 /* todo al centro */
 .ancho-novedades {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,7 +144,8 @@ h4 {
 
 /* fondo todo */
 .pagina-uno {
-    background-color: black;
+    background-image: linear-gradient(180deg,black,rgb(124, 15, 15),black,rgb(124, 15, 15),black);
+    
 }
 
 /* seccion novedades */
@@ -151,6 +153,7 @@ h4 {
 
 
 .noticias-container {
+    
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 3fr 3fr 1fr;
@@ -203,7 +206,7 @@ h4 {
 
 .proximos-lanzamientos {
     grid-area: aside-uno;
-    background-color: gray;
+    background-image: linear-gradient(135deg,gray,black,gray);
     border-radius: 3%;
     margin: 20px;
     display: flex;
@@ -211,6 +214,7 @@ h4 {
     align-items: center;
     padding: 0 5px;
     text-align: center;
+    color: white;
 }
 
 .proximos-lanzamientos img {
@@ -223,7 +227,8 @@ h4 {
 }
 
 .card {
-    background-color: black;
+    background-color:rgba(255,255,255,0);
+    border: 0;
 }
 
 /* reviews */
@@ -488,7 +493,7 @@ margin-bottom: 20px;
 
     .noticias-container {        
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
-        
+       
     }
 
     .proximos-lanzamientos {
