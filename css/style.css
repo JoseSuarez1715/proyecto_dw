@@ -168,38 +168,37 @@ h4 {
 
 .noticia-uno {
     grid-area: not-uno;
-    margin: 20px;
-    position: static
 }
 
 .noticia-dos {
     grid-area: not-dos;
-    margin: 20px;
-    position: static
+    
 }
 
 .noticia-tres {
     grid-area: not-tres;
-    margin: 20px;
-    position: static
+    
 }
 
 .noticia-cuatro {
     grid-area: not-cuatro;
-    margin: 20px;
-    position: static
+    
 }
 
 .noticia-cinco {
     grid-area: not-cinco;
-    margin: 20px;
-    position: static
+    
 }
 
 .noticia-seis {
     grid-area: not-seis;
+    
+    }
+
+.card {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
     margin: 20px;
-    position: static
 }
 
 /* aside */
@@ -226,10 +225,7 @@ h4 {
     margin: 0 10px;
 }
 
-.card {
-    background-color: rgba(255, 255, 255, 0);
-    border: 0;
-}
+
 
 /* sub seccion reviews */
 .descripcion {
@@ -311,7 +307,6 @@ h4 {
 
 .nosotros .imagen-principal {
     width: 70%;
-
 }
 
 .nosotros p {
@@ -323,9 +318,18 @@ h4 {
 
 /* pagina esports */
 
-.youtube-potg {
-    width: 60%;
-    margin-bottom: 30px;
+.esports {
+    background-image: linear-gradient(180deg, black, rgb(124, 15, 15), black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.esports .imagen-principal img{
+    width: 70%;
+    height: auto;
 }
 
 h4 {
@@ -334,6 +338,35 @@ h4 {
     margin: 15px 0px 15px 0px;
 }
 
+.potg section div iframe{
+    width: 350px
+}
+
+/* 3 grids areas que se comporten igual para responsive */
+
+.jugadas-container-fighting, .jugadas-container-moba, .jugadas-container-shooter
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "uno dos tres";
+}
+
+.video-uno{
+    grid-area: uno;
+    margin: 10px
+}
+
+.video-dos{
+    grid-area:dos;
+    margin: 10px
+}
+
+.video-tres{
+    grid-area:tres;
+    margin: 10px
+}
 .fases p {
     display: inline;
 }
@@ -415,6 +448,21 @@ h4 {
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+
+    /* esports */
+
+    .jugadas-container-fighting, .jugadas-container-moba, .jugadas-container-shooter
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "uno dos"
+    "tres tres";
+}
+
+
+    /* galeria */
 
     .fotos-galeria img {
         height: 400px;
@@ -503,6 +551,26 @@ h4 {
         flex-wrap: wrap;
     }
 
+    /* esports */
+
+    .jugadas-container-fighting, .jugadas-container-moba, .jugadas-container-shooter
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "uno"
+        "dos"
+        "tres";
+    }
+    .potg section div iframe{
+        width: 400px
+    }
+
+
+
+    /* galeria */
+
     .fotos-galeria img {
         height: 300px;
     }
@@ -544,6 +612,12 @@ h4 {
     .nosotros .imagen-principal {
         width: 100%;
         margin-top: 0;
+    }
+
+    /* esports */
+
+    .esports .imagen-principal img{
+        width: 100%;
     }
 
 }
@@ -591,6 +665,17 @@ h4 {
 
     .carrusel-contacto {
         width: 100%;
+    }
+
+    /* esports */
+
+    .potg section div iframe{
+        width: 300px;
+        margin: 5px;
+    }
+
+    .potg h3{
+        font-size: 1.5rem;
     }
 
 }
