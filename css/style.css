@@ -108,7 +108,7 @@ h1 {
 h2 {
     font-size: 30px;
     color: white;
-    margin: 20px 10px 40px 10px;
+    margin: 40px 10px 20px 10px;
     font-family: Counter;
     text-align: center;
 }
@@ -116,8 +116,8 @@ h2 {
 h3 {
 
     color: white;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     font-family: Queen;
     font-size: 30px;
 }
@@ -243,10 +243,6 @@ h4 {
     font-size: 30px
 }
 
-.analisis img {
-    margin-top: 25px;
-}
-
 .analisis {
     padding-bottom: 60px;
     margin-top: 50px;
@@ -344,8 +340,8 @@ h4 {
 }
 
 .potg section div iframe{
-    width: 350px;
-    
+    width: 375px;
+    height: 225px;
 }
 
 /* 3 grids areas que se comporten igual para responsive */
@@ -607,9 +603,21 @@ button img{
         justify-content: space-evenly;
         align-content: center;
     }
-
+/* contacto */
     .formulario {
         width: 75%;
+    }
+
+    /* esports */
+
+    .video-uno{
+        
+        margin-left: 0px
+    }
+    
+    .video-dos{
+        
+        margin-right: 0px
     }
 
 
@@ -669,6 +677,17 @@ button img{
         "dos"
         "tres";
     }
+
+    .video-uno{
+        grid-area: uno;
+        margin: 10px
+    }
+    
+    .video-dos{
+        grid-area:dos;
+        margin: 10px
+    }
+
     .potg section div iframe{
         width: 400px
     }
@@ -701,7 +720,7 @@ button img{
     /* index grid noticias */
 
     .noticias-container {
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+        grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 3fr;
 
     }
 
@@ -759,6 +778,11 @@ button img{
     .imagen-principal video {
         width: 100%;
         height: auto;
+    }
+
+    .noticias-container {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+
     }
 
     .proximos-lanzamientos {
