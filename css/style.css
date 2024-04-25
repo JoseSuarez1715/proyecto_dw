@@ -27,7 +27,7 @@ p {
 
 /*nav*/
 
-/* pisar bs */
+/* cambiando propiedad bootstrap */
 .navbar {
     position: sticky;
     top: 0;
@@ -126,6 +126,9 @@ h4 {
     display: block;
     text-align: center;
     font-family: Queen;
+    font-size: 20px;
+    color: white;
+    margin: 15px 0px 15px 0px;
 }
 
 /* todo al centro */
@@ -337,12 +340,6 @@ a .img-fluid:hover {
     height: auto;
 }
 
-h4 {
-    font-size: 20px;
-    color: white;
-    margin: 15px 0px 15px 0px;
-}
-
 .potg section div iframe {
     width: 375px;
     height: 225px;
@@ -380,6 +377,8 @@ h4 {
 
 /* esports -> torneos */
 
+/* acordeon */
+
 .accordion {
 
     width: 700px;
@@ -411,6 +410,8 @@ button img {
     margin: 0 50px;
 }
 
+/* grid de primera partes acordeon */
+
 .container-torneo-uno {
     display: grid;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
@@ -423,6 +424,8 @@ button img {
         "team-cuatro . team-ocho";
     background-image: linear-gradient(90deg, white, gray, white);
 }
+
+/* grid segunda parte acordeon */
 
 .container-torneo-dos {
     display: grid;
@@ -496,12 +499,16 @@ button img {
     color: black;
 }
 
+/* equipos del lado izquierdo */
+
 .izquierdo {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     margin: 5px 0;
 }
+
+/* equipos del lado derecho */
 
 .derecho {
     display: flex;
@@ -540,6 +547,8 @@ button img {
 .fotos-galeria img {
     height: 500px;
 }
+
+/* comienzo media querys */
 
 
 @media (max-width: 1200px) {
