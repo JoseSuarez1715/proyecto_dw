@@ -227,7 +227,12 @@ h4 {
 
 
 
-/* sub seccion reviews */
+/* sub seccion analisis */
+
+.revieww{
+    color: white;
+}
+
 .descripcion {
     width: 60%;
     margin-top: 10px;
@@ -672,6 +677,12 @@ button img{
 
         width: auto;
         
+    }
+
+    /* sub seccion analisis */
+
+    .revieww{
+        text-align: center;
     }
 
     /* galeria */
