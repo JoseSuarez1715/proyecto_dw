@@ -172,33 +172,37 @@ h4 {
 
 .noticia-dos {
     grid-area: not-dos;
-    
+
 }
 
 .noticia-tres {
     grid-area: not-tres;
-    
+
 }
 
 .noticia-cuatro {
     grid-area: not-cuatro;
-    
+
 }
 
 .noticia-cinco {
     grid-area: not-cinco;
-    
+
 }
 
 .noticia-seis {
     grid-area: not-seis;
-    
-    }
+
+}
 
 .card {
     background-color: rgba(255, 255, 255, 0);
     border: 0;
     margin: 20px;
+}
+
+a .img-fluid:hover {
+    border: 3px solid white;
 }
 
 /* aside */
@@ -229,7 +233,7 @@ h4 {
 
 /* sub seccion analisis */
 
-.revieww{
+.revieww {
     color: white;
 }
 
@@ -328,7 +332,7 @@ h4 {
     padding-bottom: 30px;
 }
 
-.esports .imagen-principal img{
+.esports .imagen-principal img {
     width: 70%;
     height: auto;
 }
@@ -339,152 +343,171 @@ h4 {
     margin: 15px 0px 15px 0px;
 }
 
-.potg section div iframe{
+.potg section div iframe {
     width: 375px;
     height: 225px;
 }
 
 /* 3 grids areas que se comporten igual para responsive */
 
-.jugadas-container-fighting, .jugadas-container-moba, .jugadas-container-shooter
-{
+.jugadas-container-fighting,
+.jugadas-container-moba,
+.jugadas-container-shooter {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "uno dos tres";
+    grid-template-areas:
+        "uno dos tres";
     background-image: linear-gradient(135deg, rgb(83, 14, 194), black, rgb(67, 4, 167));
     border-radius: 10px;
-    
+
 }
 
-.video-uno{
+.video-uno {
     grid-area: uno;
     margin: 10px
 }
 
-.video-dos{
-    grid-area:dos;
+.video-dos {
+    grid-area: dos;
     margin: 10px
 }
 
-.video-tres{
-    grid-area:tres;
+.video-tres {
+    grid-area: tres;
     margin: 10px
 }
 
 /* esports -> torneos */
 
-.accordion{
+.accordion {
 
     width: 700px;
 }
 
 
-.accordion-item h2 button{
-    background-image: linear-gradient(90deg, gray, white,gray);
+.accordion-item h2 button {
+    background-image: linear-gradient(90deg, gray, white, gray);
     text-align: center;
 }
 
-.accordion-item h2{
+.accordion-item h2 {
     margin: 20px 0 0 0;
 }
 
-.accordion-body{
+.accordion-body {
     padding: 0 20px;
 }
 
-button img{
+button img {
     width: 50px;
     margin-right: 10px;
 }
 
-.torneo-acordion-nombre{
+.torneo-acordion-nombre {
     color: black;
     text-align: center;
     font-size: 2rem;
     margin: 0 50px;
 }
 
-.container-torneo{
+.container-torneo-uno {
     display: grid;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 3fr 1fr 3fr;
-    grid-template-areas: 
-    "fase fase fase"
-    "team-uno . team-cinco"
-    "team-dos versus team-seis"
-    "team-tres versus team-siete"
-    "team-cuatro . team-ocho";
-    background-image: linear-gradient(90deg,white,gray,white);
+    grid-template-areas:
+        "fase fase fase"
+        "team-uno . team-cinco"
+        "team-dos versus team-seis"
+        "team-tres versus team-siete"
+        "team-cuatro . team-ocho";
+    background-image: linear-gradient(90deg, white, gray, white);
 }
 
-.acordion-grilla-fase{
+.container-torneo-dos {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-template-areas:
+        "fase fase fase"
+        "team-uno . team-cinco"
+        ". versus ."
+        ". versus ."
+        "team-cuatro . team-ocho";
+    background-image: linear-gradient(90deg, white, gray, white);
+}
+
+.acordion-grilla-fase {
     grid-area: fase;
     color: black;
 }
 
-.grilla-nombre-uno{
+.grilla-nombre-uno {
     grid-area: team-uno
 }
 
-.grilla-nombre-dos{
+.grilla-nombre-dos {
     grid-area: team-dos
 }
-.grilla-nombre-tres{
+
+.grilla-nombre-tres {
     grid-area: team-tres
 }
-.grilla-nombre-cuatro{
+
+.grilla-nombre-cuatro {
     grid-area: team-cuatro
 }
-.grilla-vs{
+
+.grilla-vs {
     grid-area: versus;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    }
-
-.grilla-vs p{
-          font-size: 2rem;
 }
 
-.grilla-nombre-cinco{
+.grilla-vs p {
+    font-size: 2rem;
+}
+
+.grilla-nombre-cinco {
     grid-area: team-cinco
 }
 
-.grilla-nombre-seis{
+.grilla-nombre-seis {
     grid-area: team-seis
 }
 
-.grilla-nombre-siete{
+.grilla-nombre-siete {
     grid-area: team-siete
 }
 
-.grilla-nombre-ocho{
+.grilla-nombre-ocho {
     grid-area: team-ocho
 }
 
-.container-torneo div img{
+.container-torneo-uno div img,
+.container-torneo-dos div img {
     width: 50px;
     margin: 5px;
 }
 
-.container-torneo div p{
+.container-torneo-uno div p,
+.container-torneo-dos div p {
     color: black;
 }
 
-.izquierdo{
+.izquierdo {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     margin: 5px 0;
 }
 
-.derecho{
+.derecho {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-    
+
     margin: 5px 0;
 }
 
@@ -553,15 +576,16 @@ button img{
 
     /* esports */
 
-    .jugadas-container-fighting, .jugadas-container-moba, .jugadas-container-shooter
-{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "uno dos"
-    "tres tres";
-}
+    .jugadas-container-fighting,
+    .jugadas-container-moba,
+    .jugadas-container-shooter {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "uno dos"
+            "tres tres";
+    }
 
 
     /* galeria */
@@ -603,20 +627,21 @@ button img{
         justify-content: space-evenly;
         align-content: center;
     }
-/* contacto */
+
+    /* contacto */
     .formulario {
         width: 75%;
     }
 
     /* esports */
 
-    .video-uno{
-        
+    .video-uno {
+
         margin-left: 0px
     }
-    
-    .video-dos{
-        
+
+    .video-dos {
+
         margin-right: 0px
     }
 
@@ -667,40 +692,41 @@ button img{
 
     /* esports */
 
-    .jugadas-container-fighting, .jugadas-container-moba, .jugadas-container-shooter
-    {
+    .jugadas-container-fighting,
+    .jugadas-container-moba,
+    .jugadas-container-shooter {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "uno"
-        "dos"
-        "tres";
+        grid-template-areas:
+            "uno"
+            "dos"
+            "tres";
     }
 
-    .video-uno{
+    .video-uno {
         grid-area: uno;
         margin: 10px
     }
-    
-    .video-dos{
-        grid-area:dos;
+
+    .video-dos {
+        grid-area: dos;
         margin: 10px
     }
 
-    .potg section div iframe{
+    .potg section div iframe {
         width: 400px
     }
 
-    .accordion{
+    .accordion {
 
         width: auto;
-        
+
     }
 
     /* sub seccion analisis */
 
-    .revieww{
+    .revieww {
         text-align: center;
     }
 
@@ -757,7 +783,7 @@ button img{
 
     /* esports */
 
-    .esports .imagen-principal img{
+    .esports .imagen-principal img {
         width: 100%;
     }
 
@@ -790,7 +816,7 @@ button img{
     }
 
     /* galeria */
-   
+
 
     .fotos-galeria img {
         height: 180px;
@@ -815,20 +841,20 @@ button img{
 
     /* esports */
 
-    .potg section div iframe{
+    .potg section div iframe {
         width: 95%;
         height: auto;
     }
 
-    .potg h3{
+    .potg h3 {
         font-size: 1.5rem;
     }
 
-    .accordion{
+    .accordion {
 
         width: 100%;
-        
+
     }
 
-    
+
 }
