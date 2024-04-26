@@ -777,6 +777,14 @@ button img {
         height: auto;
     }
 
+    .fotos-galeria img {
+        height: 220px;
+    }
+
+    .carrousel-galeria {
+        width: 350px;
+    }
+
     /* nosotros */
 
     .nosotros .imagen-principal {
@@ -827,13 +835,15 @@ button img {
     /* galeria */
 
 
-    .fotos-galeria img {
-        height: 180px;
-    }
+    
 
     .carrousel-galeria {
-        width: 300px;
+        width: 100%;
         padding: 75px 10px;
+    }
+
+    .fotos-galeria img {
+        height: 180px;
     }
 
     /* nosotros */
@@ -846,6 +856,10 @@ button img {
 
     .carrusel-contacto {
         width: 100%;
+    }
+
+    .formulario{
+        width: 95%;
     }
 
     /* esports */
