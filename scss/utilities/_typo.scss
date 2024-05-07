@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Counter;
+    src: url(../../resources/tipografia/CounterStreamDemoRegular.ttf);
+}
+
+@font-face {
+    font-family: Cronus;
+    src: url(../../resources/tipografia/Cronus\Round.otf);
+}
+
+@font-face {
+    font-family: Queen;
+    src: url(../../resources/tipografia/Queen\of\Camelot\2.0\demo.otf);
+}
+
+$fuente-titulo: Counter;
+$fuente-subtitulo: Queen;
+$fuente-general: Cronus;
