@@ -28,25 +28,25 @@ p {
 /*nav*/
 
 /* cambiando propiedad bootstrap */
-.navbar {
+/* .navbar {
     position: sticky;
     top: 0;
     z-index: 1000;
-}
+} */
 
-.navbar-brand img {
+/* .navbar-brand img {
     height: 50px;
 }
 
 .navbar .container-fluid {
     background-image: linear-gradient(-90deg, gray, rgb(18, 18, 119));
-}
+} */
 
-.container-fluid a {
+/* .container-fluid a {
     text-decoration: none;
     color: white;
     font-family: Queen;
-}
+} */
 
 .buscador {
     color: white;
