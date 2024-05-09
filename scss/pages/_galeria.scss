@@ -24,3 +24,75 @@
     }
 
 }
+
+
+@media (max-width: 1200px) {
+
+    .main-galeria {
+
+        img {
+            width: 80%;
+            height: auto;
+        }
+
+        .carrousel-galeria {
+            width: 500px;
+
+            img {
+                height: 400px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 767px) {
+
+    .main-galeria {
+
+        .carrousel-galeria {
+            width: 400px;
+
+            img {
+                height: 300px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 675px) {
+
+    .main-galeria {
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carrousel-galeria {
+            width: 350px;
+
+            img {
+                height: 220px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 426px) {
+
+    .main-galeria {
+
+        .carrousel-galeria {
+            width: 100%;
+            padding: 15px 10px;
+
+            img {
+                height: 200px;
+            }
+        }
+
+    }
+}

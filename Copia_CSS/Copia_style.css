@@ -601,13 +601,13 @@ a .img-fluid:hover {
 
     /* galeria */
 
-    .fotos-galeria img {
+    /* .fotos-galeria img {
         height: 400px;
     }
 
     .carrousel-galeria {
         width: 500px;
-    }
+    } */
 }
 
 @media (max-width: 1030px) {
@@ -769,7 +769,7 @@ a .img-fluid:hover {
 
     /* galeria */
 
-    .galeria img {
+    /* .galeria img {
         width: 100%;
         height: auto;
     }
@@ -780,7 +780,7 @@ a .img-fluid:hover {
 
     .carrousel-galeria {
         width: 350px;
-    }
+    } */
 
     /* nosotros */
 
@@ -831,14 +831,14 @@ a .img-fluid:hover {
 
     
 
-    .carrousel-galeria {
+    /* .carrousel-galeria {
         width: 100%;
         padding: 75px 10px;
     }
 
     .fotos-galeria img {
         height: 180px;
-    }
+    } */
 
     /* nosotros */
 
@@ -850,9 +850,9 @@ a .img-fluid:hover {
 
     
 
-    .formulario{
+    /* .formulario{
         width: 95%;
-    }
+    } */
 
     /* esports */
 

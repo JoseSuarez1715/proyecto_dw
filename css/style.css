@@ -392,6 +392,37 @@ footer {
     .main-galeria .carrousel-galeria img {
       height: 500px; }
 
+@media (max-width: 1200px) {
+  .main-galeria img {
+    width: 80%;
+    height: auto; }
+  .main-galeria .carrousel-galeria {
+    width: 500px; }
+    .main-galeria .carrousel-galeria img {
+      height: 400px; } }
+
+@media (max-width: 767px) {
+  .main-galeria .carrousel-galeria {
+    width: 400px; }
+    .main-galeria .carrousel-galeria img {
+      height: 300px; } }
+
+@media (max-width: 675px) {
+  .main-galeria img {
+    width: 100%;
+    height: auto; }
+  .main-galeria .carrousel-galeria {
+    width: 350px; }
+    .main-galeria .carrousel-galeria img {
+      height: 220px; } }
+
+@media (max-width: 426px) {
+  .main-galeria .carrousel-galeria {
+    width: 100%;
+    padding: 15px 10px; }
+    .main-galeria .carrousel-galeria img {
+      height: 200px; } }
+
 .main-nosotros {
   background-image: linear-gradient(180deg, black, #7c0f0f, black);
   display: flex;
