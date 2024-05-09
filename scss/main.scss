@@ -1,8 +1,12 @@
+// utilities
 @import './utilities/typo';
 @import './utilities/reset';
-
+// sections
 @import './sections/nav';
 @import './sections/footer';
 @import './sections/card';
+// pages
 @import './pages/index';
-@import './pages/esports'
+@import './pages/esports';
+@import './pages/galeria';
+@import './pages/nosotros';

@@ -122,6 +122,7 @@ footer {
       margin: 20px;
       display: flex;
       flex-direction: column;
+      justify-content: space-around;
       align-items: center;
       padding: 0 5px;
       text-align: center;
@@ -150,8 +151,8 @@ footer {
   text-align: center;
   padding-bottom: 30px; }
   .main-esports .imagen-principal img {
-    width: auto;
-    height: 500px; }
+    width: 60%;
+    height: auto; }
   .main-esports .potg .jugadas-container-shooter {
     display: grid;
     grid-template-rows: 1fr;
@@ -304,3 +305,41 @@ footer {
         flex-direction: row-reverse;
         align-items: flex-end;
         margin: 5px 0; }
+
+.main-galeria {
+  background-image: linear-gradient(180deg, black, #7c0f0f, black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  .main-galeria p {
+    padding: 0 10px; }
+  .main-galeria img {
+    width: 60%;
+    height: auto; }
+  .main-galeria .carrousel-galeria {
+    width: 700px;
+    margin-bottom: 20px; }
+    .main-galeria .carrousel-galeria img {
+      height: 500px; }
+
+.main-nosotros {
+  background-image: linear-gradient(180deg, black, #7c0f0f, black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 30px; }
+  .main-nosotros .imagen-principal {
+    width: 60%; }
+  .main-nosotros h3 {
+    font-size: 2rem;
+    padding-top: 30px; }
+  .main-nosotros div img {
+    width: 300px;
+    height: auto;
+    display: inline;
+    margin: 15px; }
+  .main-nosotros p {
+    margin: 20px 0px 30px 0px;
+    width: 75%; }

@@ -5,10 +5,10 @@
 
 */
 
-@font-face {
+/* @font-face {
     font-family: Cronus;
     src: url(../resources/tipografia/Cronus\ Round.otf);
-}
+} */
 
 
 
@@ -295,7 +295,7 @@ a .img-fluid:hover {
 
 /* pagina nosotros */
 
-.nosotros {
+/* .main-nosotros {
     background-image: linear-gradient(180deg, black, rgb(124, 15, 15), black);
     display: flex;
     flex-direction: column;
@@ -314,11 +314,11 @@ a .img-fluid:hover {
 .nosotros h3 {
     font-size: 2rem;
     padding-top: 30px;
-}
+} */
 
-.nosotros .imagen-principal {
+/* .nosotros .imagen-principal {
     width: 70%;
-}
+} */
 
 .nosotros p {
     margin: 20px 0px 30px 0px;
@@ -504,7 +504,7 @@ a .img-fluid:hover {
 
 /* equipos del lado izquierdo */
 
-.izquierdo {
+/* .izquierdo {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -513,26 +513,26 @@ a .img-fluid:hover {
 
 /* equipos del lado derecho */
 
-.derecho {
+/* .derecho {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
 
     margin: 5px 0;
-}
+} */ 
 
 /* pagina galeria */
 
 
-.galeria {
+/* .galeria {
     background-image: linear-gradient(180deg, black, rgb(124, 15, 15), black);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
+} */
 
-.galeria p {
+/* .galeria p {
     padding: 0 10px;
 }
 
@@ -542,14 +542,14 @@ a .img-fluid:hover {
 
 /* ajusto imagenes del carrusel */
 
-.carrousel-galeria {
+/* .carrousel-galeria {
     width: 700px;
     margin-bottom: 20px;
 }
 
 .fotos-galeria img {
     height: 500px;
-}
+} */ */
 
 /* comienzo media querys */
 

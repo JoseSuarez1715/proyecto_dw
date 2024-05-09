@@ -1,0 +1,32 @@
+.main-nosotros {
+    background-image: linear-gradient(180deg, black, rgb(124, 15, 15), black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+
+    .imagen-principal {
+        width: 60%;
+    }
+
+    h3 {
+        font-size: 2rem;
+        padding-top: 30px;
+    }
+
+    div {
+        img {
+            width: 300px;
+            height: auto;
+            display: inline;
+            margin: 15px;
+        }
+    }
+
+    p {
+        margin: 20px 0px 30px 0px;
+        width: 75%;
+    }
+
+}
