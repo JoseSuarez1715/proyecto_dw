@@ -260,13 +260,12 @@ a .img-fluid:hover {
 
 /* pagina contacto */
 
-.pagina-contacto {
+/* .main-contacto {
     background-image: linear-gradient(180deg, black, rgb(124, 15, 15), black);
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .carrusel-contacto {
@@ -291,7 +290,7 @@ a .img-fluid:hover {
 
 .mb-3 {
     margin-top: 20px;
-}
+} */
 
 /* pagina nosotros */
 
@@ -320,10 +319,10 @@ a .img-fluid:hover {
     width: 70%;
 } */
 
-.nosotros p {
+/* .nosotros p {
     margin: 20px 0px 30px 0px;
     width: 75%;
-}
+} */
 
 
 
