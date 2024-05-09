@@ -19,6 +19,7 @@
         }
 
         .novedades {
+
             .novedades-container {
                 display: grid;
                 grid-template-rows: 1fr 1fr 1fr;
@@ -154,7 +155,7 @@
 
     .main-index {
         .pagina-uno {
-            
+
 
             .novedades {
                 .novedades-container {
@@ -225,8 +226,9 @@
                     }
                 }
             }
-            .analisis{
-                .descripcion{
+
+            .analisis {
+                .descripcion {
                     width: 90%;
                 }
             }
@@ -242,6 +244,7 @@
             .novedades {
                 .novedades-container {
                     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+
                     .proximos-lanzamientos {
                         height: 700px;
                     }

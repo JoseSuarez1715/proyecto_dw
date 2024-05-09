@@ -1,4 +1,5 @@
 .potg-grid {
+    
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -7,6 +8,46 @@
     background-image: linear-gradient(135deg, rgb(83, 14, 194), black, rgb(67, 4, 167));
     border-radius: 10px;
 }
+
+// keyframes
+@keyframes colorear {
+    0%{
+        color:#ffc003;
+    }
+    25%{
+        color:#b38809;
+    }
+    50%{
+        color:#8a6a0d;
+    }
+    75%{
+        color:#b38809;
+    }
+    100%{
+        color:#efb810;
+    }
+}
+
+@keyframes grisear {
+    0%{
+        color:#ffffff;
+    }
+    25%{
+        color:#e9e9e9;
+    }
+    50%{
+        color:#7e7d7a;
+    }
+    75%{
+        color:#dadada;
+    }
+    100%{
+        color:#ffffff;
+    }
+}
+
+
+
 
 @media (max-width: 1200px) {
     .potg-grid{

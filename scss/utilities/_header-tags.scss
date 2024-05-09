@@ -1,10 +1,13 @@
 h1 {    
     font-family: $fuente-titulo;
-    font-size: 6rem;
-    color: #efb810;
+    font-size: 6rem;   
     top: 25px;
     text-align: center;
     position: absolute;
+    animation-name: colorear;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+    
 }
 
 h2 {
@@ -12,7 +15,11 @@ h2 {
     color: white;
     margin: 40px 10px 20px 10px;
     font-family: $fuente-titulo;
-    text-align: center;    
+    text-align: center; 
+    animation-name: grisear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
 }
 
 h3 {
