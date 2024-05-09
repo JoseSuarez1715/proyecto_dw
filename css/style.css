@@ -141,3 +141,89 @@ footer {
       margin-top: 10px; }
     .main-index .pagina-uno .analisis .calificacion {
       color: white; }
+
+.main-esports {
+  background-image: linear-gradient(180deg, black, #7c0f0f, black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 30px; }
+  .main-esports .imagen-principal img {
+    width: 70%;
+    height: auto; }
+  .main-esports .potg .jugadas-container-shooter {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "uno dos tres";
+    background-image: linear-gradient(135deg, #530ec2, black, #4304a7);
+    border-radius: 10px; }
+    .main-esports .potg .jugadas-container-shooter .video-uno {
+      grid-area: uno;
+      margin: 10px; }
+      .main-esports .potg .jugadas-container-shooter .video-uno iframe {
+        width: 375px;
+        height: 225px; }
+    .main-esports .potg .jugadas-container-shooter .video-dos {
+      grid-area: dos;
+      margin: 10px; }
+      .main-esports .potg .jugadas-container-shooter .video-dos iframe {
+        width: 375px;
+        height: 225px; }
+    .main-esports .potg .jugadas-container-shooter .video-tres {
+      grid-area: tres;
+      margin: 10px; }
+      .main-esports .potg .jugadas-container-shooter .video-tres iframe {
+        width: 375px;
+        height: 225px; }
+  .main-esports .potg .jugadas-container-moba {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "uno dos tres";
+    background-image: linear-gradient(135deg, #530ec2, black, #4304a7);
+    border-radius: 10px; }
+    .main-esports .potg .jugadas-container-moba .video-uno {
+      grid-area: uno;
+      margin: 10px; }
+      .main-esports .potg .jugadas-container-moba .video-uno iframe {
+        width: 375px;
+        height: 225px; }
+    .main-esports .potg .jugadas-container-moba .video-dos {
+      grid-area: dos;
+      margin: 10px; }
+      .main-esports .potg .jugadas-container-moba .video-dos iframe {
+        width: 375px;
+        height: 225px; }
+    .main-esports .potg .jugadas-container-moba .video-tres {
+      grid-area: tres;
+      margin: 10px; }
+      .main-esports .potg .jugadas-container-moba .video-tres iframe {
+        width: 375px;
+        height: 225px; }
+  .main-esports .potg .jugadas-container-fighting {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "uno dos tres";
+    background-image: linear-gradient(135deg, #530ec2, black, #4304a7);
+    border-radius: 10px; }
+    .main-esports .potg .jugadas-container-fighting .video-uno {
+      grid-area: uno;
+      margin: 10px; }
+      .main-esports .potg .jugadas-container-fighting .video-uno iframe {
+        width: 375px;
+        height: 225px; }
+    .main-esports .potg .jugadas-container-fighting .video-dos {
+      grid-area: dos;
+      margin: 10px; }
+      .main-esports .potg .jugadas-container-fighting .video-dos iframe {
+        width: 375px;
+        height: 225px; }
+    .main-esports .potg .jugadas-container-fighting .video-tres {
+      grid-area: tres;
+      margin: 10px; }
+      .main-esports .potg .jugadas-container-fighting .video-tres iframe {
+        width: 375px;
+        height: 225px; }

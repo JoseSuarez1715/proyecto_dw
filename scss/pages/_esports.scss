@@ -1,0 +1,141 @@
+.main-esports {
+    background-image: linear-gradient(180deg, black, rgb(124, 15, 15), black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+
+    .imagen-principal {
+        img {
+            width: 70%;
+            height: auto;
+        }
+    }
+
+    .potg {
+        .jugadas-container-shooter {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+                "uno dos tres";
+            background-image: linear-gradient(135deg, rgb(83, 14, 194), black, rgb(67, 4, 167));
+            border-radius: 10px;
+
+            .video-uno {
+                grid-area: uno;
+                margin: 10px;
+
+                iframe {
+                    width: 375px;
+                    height: 225px;
+                }
+            }
+
+            .video-dos {
+                grid-area: dos;
+                margin: 10px;
+
+                iframe {
+                    width: 375px;
+                    height: 225px;
+                }
+            }
+
+            .video-tres {
+                grid-area: tres;
+                margin: 10px;
+
+                iframe {
+                    width: 375px;
+                    height: 225px;
+                }
+            }
+
+        }
+
+        .jugadas-container-moba {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+                "uno dos tres";
+            background-image: linear-gradient(135deg, rgb(83, 14, 194), black, rgb(67, 4, 167));
+            border-radius: 10px;
+
+            .video-uno {
+                grid-area: uno;
+                margin: 10px;
+
+                iframe {
+                    width: 375px;
+                    height: 225px;
+                }
+            }
+
+            .video-dos {
+                grid-area: dos;
+                margin: 10px;
+
+                iframe {
+                    width: 375px;
+                    height: 225px;
+                }
+            }
+
+            .video-tres {
+                grid-area: tres;
+                margin: 10px;
+
+                iframe {
+                    width: 375px;
+                    height: 225px;
+                }
+            }
+
+        }
+
+        .jugadas-container-fighting {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+                "uno dos tres";
+            background-image: linear-gradient(135deg, rgb(83, 14, 194), black, rgb(67, 4, 167));
+            border-radius: 10px;
+
+            .video-uno {
+                grid-area: uno;
+                margin: 10px;
+
+                iframe {
+                    width: 375px;
+                    height: 225px;
+                }
+            }
+
+            .video-dos {
+                grid-area: dos;
+                margin: 10px;
+
+                iframe {
+                    width: 375px;
+                    height: 225px;
+                }
+            }
+
+            .video-tres {
+                grid-area: tres;
+                margin: 10px;
+
+                iframe {
+                    width: 375px;
+                    height: 225px;
+                }
+            }
+
+        }
+
+    }
+}

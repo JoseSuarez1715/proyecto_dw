@@ -329,14 +329,14 @@ a .img-fluid:hover {
 
 /* pagina esports */
 
-.esports {
+/* .esports {
     background-image: linear-gradient(180deg, black, rgb(124, 15, 15), black);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding-bottom: 30px;
-}
+} */
 
 .esports .imagen-principal img {
     width: 70%;
