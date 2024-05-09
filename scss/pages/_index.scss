@@ -1,0 +1,86 @@
+.main-index {
+    .pagina-uno {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(180deg, black, rgb(124, 15, 15), black, rgb(124, 15, 15), black);
+
+        .imagen-principal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            video {
+                height: 500px;
+
+            }
+
+        }
+
+        .novedades {
+            .novedades-container {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 3fr 3fr 1fr;
+                grid-template-areas:
+                    "not-uno not-dos aside-uno"
+                    "not-tres not-cuatro aside-uno"
+                    "not-cinco not-seis aside-uno";
+
+                .noticia-uno {
+                    grid-area: not-uno;
+                }
+
+                .noticia-dos {
+                    grid-area: not-dos;
+
+                }
+
+                .noticia-tres {
+                    grid-area: not-tres;
+
+                }
+
+                .noticia-cuatro {
+                    grid-area: not-cuatro;
+
+                }
+
+                .noticia-cinco {
+                    grid-area: not-cinco;
+
+                }
+
+                .noticia-seis {
+                    grid-area: not-seis;
+
+                }
+
+                .proximos-lanzamientos {
+                    grid-area: aside-uno;
+                    background-image: linear-gradient(135deg, gray, black, gray);
+                    border-radius: 10px;
+                    margin: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0 5px;
+                    text-align: center;
+                    color: white;
+
+                    img {
+                        width: 100px;
+
+                    }
+
+                    div {
+                        margin: 0 10px;
+                    }
+
+                }
+
+            }
+        }
+    }
+}

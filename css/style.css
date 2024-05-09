@@ -14,6 +14,36 @@
   margin: 0;
   padding: 0; }
 
+h1 {
+  font-family: Counter;
+  font-size: 6rem;
+  color: #efb810;
+  top: 25px;
+  text-align: center;
+  position: absolute; }
+
+h2 {
+  font-size: 30px;
+  color: white;
+  margin: 40px 10px 20px 10px;
+  font-family: Counter;
+  text-align: center; }
+
+h3 {
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: Queen;
+  font-size: 30px; }
+
+h4 {
+  display: block;
+  text-align: center;
+  font-family: Queen;
+  font-size: 20px;
+  color: white;
+  margin: 15px 0px 15px 0px; }
+
 p {
   color: white;
   font-family: Cronus;
@@ -50,3 +80,53 @@ footer {
     footer ul img {
       width: 50px;
       border-radius: 50%; }
+
+.card {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  margin: 20px; }
+
+.main-index .pagina-uno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(180deg, black, #7c0f0f, black, #7c0f0f, black); }
+  .main-index .pagina-uno .imagen-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; }
+    .main-index .pagina-uno .imagen-principal video {
+      height: 500px; }
+  .main-index .pagina-uno .novedades .novedades-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 3fr 1fr;
+    grid-template-areas: "not-uno not-dos aside-uno" "not-tres not-cuatro aside-uno" "not-cinco not-seis aside-uno"; }
+    .main-index .pagina-uno .novedades .novedades-container .noticia-uno {
+      grid-area: not-uno; }
+    .main-index .pagina-uno .novedades .novedades-container .noticia-dos {
+      grid-area: not-dos; }
+    .main-index .pagina-uno .novedades .novedades-container .noticia-tres {
+      grid-area: not-tres; }
+    .main-index .pagina-uno .novedades .novedades-container .noticia-cuatro {
+      grid-area: not-cuatro; }
+    .main-index .pagina-uno .novedades .novedades-container .noticia-cinco {
+      grid-area: not-cinco; }
+    .main-index .pagina-uno .novedades .novedades-container .noticia-seis {
+      grid-area: not-seis; }
+    .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos {
+      grid-area: aside-uno;
+      background-image: linear-gradient(135deg, gray, black, gray);
+      border-radius: 10px;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 5px;
+      text-align: center;
+      color: white; }
+      .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos img {
+        width: 100px; }
+      .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos div {
+        margin: 0 10px; }
