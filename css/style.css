@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Cronus;
-  src: url(../resources/tipografia/Cronus\Round.otf); }
+  font-family: galdeano;
+  src: url(../../resources/tipografia/galdeano.regular.ttf); }
 
 @font-face {
   font-family: Queen;
@@ -46,7 +46,7 @@ h4 {
 
 p {
   color: white;
-  font-family: Cronus;
+  font-family: galdeano;
   font-size: 1.2rem; }
 
 .navbar {
@@ -150,8 +150,8 @@ footer {
   text-align: center;
   padding-bottom: 30px; }
   .main-esports .imagen-principal img {
-    width: 70%;
-    height: auto; }
+    width: auto;
+    height: 500px; }
   .main-esports .potg .jugadas-container-shooter {
     display: grid;
     grid-template-rows: 1fr;
@@ -227,3 +227,80 @@ footer {
       .main-esports .potg .jugadas-container-fighting .video-tres iframe {
         width: 375px;
         height: 225px; }
+  .main-esports .torneos .accordion {
+    width: 700px; }
+    .main-esports .torneos .accordion .accordion-item h2 {
+      margin: 20px 0 0 0; }
+      .main-esports .torneos .accordion .accordion-item h2 button {
+        background-image: linear-gradient(90deg, gray, white, gray);
+        text-align: center; }
+        .main-esports .torneos .accordion .accordion-item h2 button img {
+          height: 50px;
+          width: 50px;
+          margin-right: 10px; }
+        .main-esports .torneos .accordion .accordion-item h2 button .torneo-acordion-nombre {
+          color: black;
+          text-align: center;
+          font-size: 2rem;
+          margin: 0 50px;
+          font-family: Queen; }
+    .main-esports .torneos .accordion .accordion-item .accordion-body {
+      padding: 0 20px;
+      /* clases equipos del lado izquierdo */
+      /* clases equipos del lado derecho */ }
+      .main-esports .torneos .accordion .accordion-item .accordion-body .container-torneo-uno {
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 3fr 1fr 3fr;
+        grid-template-areas: "fase fase fase" "team-uno . team-cinco" "team-dos versus team-seis" "team-tres versus team-siete" "team-cuatro . team-ocho";
+        background-image: linear-gradient(90deg, white, gray, white); }
+      .main-esports .torneos .accordion .accordion-item .accordion-body .container-torneo-dos {
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 3fr 1fr 3fr;
+        grid-template-areas: "fase fase fase" "team-uno . team-cinco" ". versus ." ". versus ." "team-cuatro . team-ocho";
+        background-image: linear-gradient(90deg, white, gray, white); }
+      .main-esports .torneos .accordion .accordion-item .accordion-body p {
+        color: black; }
+      .main-esports .torneos .accordion .accordion-item .accordion-body img {
+        width: 50px;
+        margin: 5px; }
+      .main-esports .torneos .accordion .accordion-item .accordion-body .acordion-grilla-fase {
+        grid-area: fase; }
+        .main-esports .torneos .accordion .accordion-item .accordion-body .acordion-grilla-fase p {
+          padding-top: 15px;
+          font-family: Queen;
+          color: black; }
+      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-uno {
+        grid-area: team-uno; }
+      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-dos {
+        grid-area: team-dos; }
+      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-tres {
+        grid-area: team-tres; }
+      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-cuatro {
+        grid-area: team-cuatro; }
+      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-vs {
+        grid-area: versus;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-vs p {
+          font-size: 3rem; }
+      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-cinco {
+        grid-area: team-cinco; }
+      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-seis {
+        grid-area: team-seis; }
+      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-siete {
+        grid-area: team-siete; }
+      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-ocho {
+        grid-area: team-ocho; }
+      .main-esports .torneos .accordion .accordion-item .accordion-body .izquierdo {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin: 5px 0; }
+      .main-esports .torneos .accordion .accordion-item .accordion-body .derecho {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        margin: 5px 0; }

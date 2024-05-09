@@ -338,19 +338,19 @@ a .img-fluid:hover {
     padding-bottom: 30px;
 } */
 
-.esports .imagen-principal img {
+/* .esports .imagen-principal img {
     width: 70%;
     height: auto;
-}
-
+ } */
+/*
 .potg section div iframe {
     width: 375px;
     height: 225px;
-}
+} */
 
 /* 3 grids areas que se comporten igual para responsive */
 
-.jugadas-container-fighting,
+/* .jugadas-container-fighting,
 .jugadas-container-moba,
 .jugadas-container-shooter {
     display: grid;
@@ -376,46 +376,46 @@ a .img-fluid:hover {
 .video-tres {
     grid-area: tres;
     margin: 10px
-}
+} */
 
 /* esports -> torneos */
 
 /* acordeon */
 
-.accordion {
+/* .accordion {
 
     width: 700px;
-}
+} */
 
 
-.accordion-item h2 button {
+/* .accordion-item h2 button {
     background-image: linear-gradient(90deg, gray, white, gray);
     text-align: center;
 }
 
 .accordion-item h2 {
     margin: 20px 0 0 0;
-}
+} */
 
-.accordion-body {
+/* .accordion-body {
     padding: 0 20px;
-}
+} */
 
-button img {
+/* button img {
     width: 50px;
     margin-right: 10px;
-}
+} */
 
-.torneo-acordion-nombre {
+/* .torneo-acordion-nombre {
     color: black;
     text-align: center;
     font-size: 2rem;
     margin: 0 50px;
-}
+} */
 
 /* grid de primera partes acordeon */
 
-.container-torneo-uno {
+/* .container-torneo-uno {
     display: grid;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 3fr 1fr 3fr;
@@ -430,7 +430,7 @@ button img {
 
 /* grid segunda parte acordeon */
 
-.container-torneo-dos {
+/* .container-torneo-dos {
     display: grid;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 3fr 1fr 3fr;
@@ -441,9 +441,9 @@ button img {
         ". versus ."
         "team-cuatro . team-ocho";
     background-image: linear-gradient(90deg, white, gray, white);
-}
+}  */
 
-.acordion-grilla-fase {
+/* .acordion-grilla-fase {
     grid-area: fase;
     color: black;
 }
@@ -489,18 +489,18 @@ button img {
 
 .grilla-nombre-ocho {
     grid-area: team-ocho
-}
+} */
 
-.container-torneo-uno div img,
+/* .container-torneo-uno div img,
 .container-torneo-dos div img {
     width: 50px;
     margin: 5px;
-}
+} */
 
-.container-torneo-uno div p,
+/* .container-torneo-uno div p,
 .container-torneo-dos div p {
     color: black;
-}
+} */
 
 /* equipos del lado izquierdo */
 

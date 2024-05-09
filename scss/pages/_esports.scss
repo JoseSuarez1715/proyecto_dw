@@ -8,8 +8,8 @@
 
     .imagen-principal {
         img {
-            width: 70%;
-            height: auto;
+            width: auto;
+            height: 500px;
         }
     }
 
@@ -135,6 +135,173 @@
                 }
             }
 
+        }
+
+    }
+
+    .torneos {
+        .accordion {
+
+            width: 700px;
+
+            .accordion-item {
+
+                h2 {
+                    margin: 20px 0 0 0;
+
+                    button {
+                        background-image: linear-gradient(90deg, gray, white, gray);
+                        text-align: center;
+
+                        img {
+                            height: 50px;
+                            width: 50px;
+                            margin-right: 10px;
+                        }
+
+                        .torneo-acordion-nombre {
+                            color: black;
+                            text-align: center;
+                            font-size: 2rem;
+                            margin: 0 50px;
+                            font-family: $fuente-subtitulo;
+                        }
+                    }
+
+                }
+
+                .accordion-body {
+                    padding: 0 20px;
+
+                    .container-torneo-uno {
+                        display: grid;
+                        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+                        grid-template-columns: 3fr 1fr 3fr;
+                        grid-template-areas:
+                            "fase fase fase"
+                            "team-uno . team-cinco"
+                            "team-dos versus team-seis"
+                            "team-tres versus team-siete"
+                            "team-cuatro . team-ocho";
+                        background-image: linear-gradient(90deg, white, gray, white);
+                    }
+
+                    .container-torneo-dos {
+                        display: grid;
+                        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+                        grid-template-columns: 3fr 1fr 3fr;
+                        grid-template-areas:
+                            "fase fase fase"
+                            "team-uno . team-cinco"
+                            ". versus ."
+                            ". versus ."
+                            "team-cuatro . team-ocho";
+                        background-image: linear-gradient(90deg, white, gray, white);
+                    }
+
+                    // divs que coparten los items del acordeon
+
+                    p {
+                        color: black;
+                    }
+
+                    img {
+                        width: 50px;
+                        margin: 5px;
+                    }
+
+                    .acordion-grilla-fase {
+                        grid-area: fase;
+
+                        p {
+                            padding-top: 15px;
+                            font-family: $fuente-subtitulo;
+                            color: black;
+                        }
+                    }
+
+                    .grilla-nombre-uno {
+                        grid-area: team-uno;
+
+
+                    }
+
+                    .grilla-nombre-dos {
+                        grid-area: team-dos;
+
+
+                    }
+
+                    .grilla-nombre-tres {
+                        grid-area: team-tres;
+
+
+                    }
+
+                    .grilla-nombre-cuatro {
+                        grid-area: team-cuatro;
+
+
+                    }
+
+                    .grilla-vs {
+                        grid-area: versus;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        p {
+                            font-size: 3rem;
+                        }
+                    }
+
+                    .grilla-nombre-cinco {
+                        grid-area: team-cinco;
+
+
+                    }
+
+                    .grilla-nombre-seis {
+                        grid-area: team-seis;
+
+
+                    }
+
+                    .grilla-nombre-siete {
+                        grid-area: team-siete;
+
+
+                    }
+
+                    .grilla-nombre-ocho {
+                        grid-area: team-ocho;
+
+
+                    }
+
+                    /* clases equipos del lado izquierdo */
+
+                    .izquierdo {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-end;
+                        margin: 5px 0;
+                    }
+
+                    /* clases equipos del lado derecho */
+
+                    .derecho {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: flex-end;
+
+                        margin: 5px 0;
+                    }
+                }
+
+
+
+            }
         }
 
     }
