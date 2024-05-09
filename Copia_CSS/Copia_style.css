@@ -556,7 +556,7 @@ a .img-fluid:hover {
 @media (max-width: 1200px) {
 
 
-    /* index video*/
+    /* index video
 
     .imagen-principal video {
         width: 95%;
@@ -564,7 +564,7 @@ a .img-fluid:hover {
 
     /* index grid noticias */
 
-    .noticias-container {
+    /* .noticias-container {
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 2fr 2fr;
         grid-template-areas:
@@ -583,7 +583,7 @@ a .img-fluid:hover {
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
-    }
+    } */ 
 
     /* esports */
 
@@ -613,14 +613,14 @@ a .img-fluid:hover {
 @media (max-width: 1030px) {
 
 
-    h1 {
+    /* h1 {
         font-size: 4rem;
         top: 60px;
-    }
+    } */
 
     /* index grid noticias */
 
-    .noticias-container {
+    /* .noticias-container {
         display: grid;
         grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr;
         grid-template-columns: 4fr 1fr;
@@ -637,7 +637,7 @@ a .img-fluid:hover {
         flex-direction: column;
         justify-content: space-evenly;
         align-content: center;
-    }
+    } */
 
     /* contacto */
     .formulario {
@@ -661,21 +661,16 @@ a .img-fluid:hover {
 
 @media (max-width: 770px) {
 
-    h1 {
+    /* h1 {
         font-size: 3rem;
         top: 0px;
-    }
+    } */
 
-    /* index video*/
-
-    .imagen-principal video {
-        width: 100%;
-        height: auto;
-    }
+   
 
     /* index grid noticias */
 
-    .noticias-container {
+    /* .noticias-container {
         display: grid;
         grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
         grid-template-columns: 1fr;
@@ -699,7 +694,7 @@ a .img-fluid:hover {
         justify-content: space-evenly;
         align-items: first baseline;
         flex-wrap: wrap;
-    }
+    } */
 
     /* esports */
 
@@ -756,7 +751,7 @@ a .img-fluid:hover {
 
     /* index grid noticias */
 
-    .noticias-container {
+    /* .noticias-container {
         grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 3fr;
 
     }
@@ -765,12 +760,12 @@ a .img-fluid:hover {
         height: 600px;
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
-    footer img {
+    /* footer img {
         width: 30px;
 
-    }
+    } */
 
     /* galeria */
 
@@ -820,19 +815,16 @@ a .img-fluid:hover {
 
     /* index */
 
-    .imagen-principal video {
-        width: 100%;
-        height: auto;
-    }
+   
 
-    .noticias-container {
+    /* .noticias-container {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
 
     }
 
     .proximos-lanzamientos {
         height: 700px;
-    }
+    } */
 
     /* galeria */
 

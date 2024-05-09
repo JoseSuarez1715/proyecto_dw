@@ -24,3 +24,14 @@ footer {
         }
     }
 }
+
+@media (max-width: 675px) {
+
+    footer{
+        ul{
+            img{
+                width: 30px;
+            }
+        }
+    }
+}

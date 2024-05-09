@@ -81,6 +81,10 @@ footer {
       width: 50px;
       border-radius: 50%; }
 
+@media (max-width: 675px) {
+  footer ul img {
+    width: 30px; } }
+
 .card {
   background-color: rgba(255, 255, 255, 0);
   border: 0;
@@ -142,6 +146,71 @@ footer {
       margin-top: 10px; }
     .main-index .pagina-uno .analisis .calificacion {
       color: white; }
+
+@media (max-width: 1200px) {
+  .main-index .pagina-uno .imagen-principal video {
+    width: 100%;
+    height: auto; }
+  .main-index .pagina-uno .novedades .novedades-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "not-uno not-dos" "not-tres not-cuatro" "not-cinco not-seis" "aside-uno aside-uno"; }
+    .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos {
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap; }
+      .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos .proximos-lanzamientos-titulo {
+        display: block;
+        width: 100%; }
+      .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos img {
+        width: 100px; }
+      .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos div {
+        margin: 0 10px; } }
+
+@media (max-width: 1030px) {
+  .main-index .pagina-uno .imagen-principal h1 {
+    font-size: 4rem;
+    top: 60px; }
+  .main-index .pagina-uno .novedades .novedades-container {
+    display: grid;
+    grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: "not-uno aside-uno" "not-dos aside-uno" "not-tres aside-uno" "not-cuatro aside-uno" "not-cinco ." "not-seis ."; }
+  .main-index .pagina-uno .novedades .proximos-lanzamientos {
+    flex-direction: column;
+    justify-content: space-around; } }
+
+@media (max-width: 770px) {
+  .main-index .pagina-uno .imagen-principal h1 {
+    font-size: 3rem;
+    top: 0px; }
+  .main-index .pagina-uno .novedades .novedades-container {
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "not-uno" "not-dos" "not-tres" "not-cuatro" "not-cinco " "not-seis " "aside-uno"; }
+    .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: baseline;
+      flex-wrap: wrap; } }
+
+@media (max-width: 675px) {
+  .main-index .pagina-uno .novedades .novedades-container {
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 3fr; }
+    .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos {
+      height: 600px;
+      flex-direction: column;
+      align-items: center; }
+  .main-index .pagina-uno .analisis .descripcion {
+    width: 90%; } }
+
+@media (max-width: 426px) {
+  .main-index .pagina-uno .novedades .novedades-container {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr; }
+    .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos {
+      height: 700px; } }
 
 .main-esports {
   background-image: linear-gradient(180deg, black, #7c0f0f, black);
