@@ -587,7 +587,7 @@ a .img-fluid:hover {
 
     /* esports */
 
-    .jugadas-container-fighting,
+    /* .jugadas-container-fighting,
     .jugadas-container-moba,
     .jugadas-container-shooter {
         display: grid;
@@ -596,7 +596,7 @@ a .img-fluid:hover {
         grid-template-areas:
             "uno dos"
             "tres tres";
-    }
+    } */
 
 
     /* galeria */
@@ -698,7 +698,7 @@ a .img-fluid:hover {
 
     /* esports */
 
-    .jugadas-container-fighting,
+    /* .jugadas-container-fighting,
     .jugadas-container-moba,
     .jugadas-container-shooter {
         display: grid;
@@ -718,9 +718,9 @@ a .img-fluid:hover {
     .video-dos {
         grid-area: dos;
         margin: 10px
-    }
+    } */
 
-    .potg section div iframe {
+    /* .potg section div iframe {
         width: 400px
     }
 
@@ -728,7 +728,7 @@ a .img-fluid:hover {
 
         width: auto;
 
-    }
+    } */
 
     /* sub seccion analisis */
 
@@ -738,13 +738,13 @@ a .img-fluid:hover {
 
     /* galeria */
 
-    .fotos-galeria img {
+    /* .fotos-galeria img {
         height: 300px;
     }
 
     .carrousel-galeria {
         width: 400px;
-    }
+    } */
 }
 
 @media (max-width: 675px) {
@@ -797,9 +797,9 @@ a .img-fluid:hover {
 
     /* esports */
 
-    .esports .imagen-principal img {
+    /* .esports .imagen-principal img {
         width: 100%;
-    }
+    } */
 
 }
 
@@ -865,11 +865,11 @@ a .img-fluid:hover {
         font-size: 1.5rem;
     }
 
-    .accordion {
+    /* .accordion {
 
         width: 100%;
 
-    }
+    } */
 
 
 }

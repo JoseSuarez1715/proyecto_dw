@@ -49,6 +49,29 @@ p {
   font-family: galdeano;
   font-size: 1.2rem; }
 
+.potg-grid, .main-esports .potg .jugadas-container-shooter, .main-esports .potg .jugadas-container-moba, .main-esports .potg .jugadas-container-fighting {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "uno dos tres";
+  background-image: linear-gradient(135deg, #530ec2, black, #4304a7);
+  border-radius: 10px; }
+
+@media (max-width: 1200px) {
+  .potg-grid, .main-esports .potg .jugadas-container-shooter, .main-esports .potg .jugadas-container-moba, .main-esports .potg .jugadas-container-fighting {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "uno dos" "tres tres"; } }
+
+@media (max-width: 800px) {
+  .potg-grid, .main-esports .potg .jugadas-container-shooter, .main-esports .potg .jugadas-container-moba, .main-esports .potg .jugadas-container-fighting {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "uno" "dos" "tres";
+    border-radius: 0px; } }
+
 .navbar {
   position: sticky;
   top: 0;
@@ -222,81 +245,42 @@ footer {
   .main-esports .imagen-principal img {
     width: 60%;
     height: auto; }
-  .main-esports .potg .jugadas-container-shooter {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "uno dos tres";
-    background-image: linear-gradient(135deg, #530ec2, black, #4304a7);
-    border-radius: 10px; }
-    .main-esports .potg .jugadas-container-shooter .video-uno {
-      grid-area: uno;
-      margin: 10px; }
-      .main-esports .potg .jugadas-container-shooter .video-uno iframe {
-        width: 375px;
-        height: 225px; }
-    .main-esports .potg .jugadas-container-shooter .video-dos {
-      grid-area: dos;
-      margin: 10px; }
-      .main-esports .potg .jugadas-container-shooter .video-dos iframe {
-        width: 375px;
-        height: 225px; }
-    .main-esports .potg .jugadas-container-shooter .video-tres {
-      grid-area: tres;
-      margin: 10px; }
-      .main-esports .potg .jugadas-container-shooter .video-tres iframe {
-        width: 375px;
-        height: 225px; }
-  .main-esports .potg .jugadas-container-moba {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "uno dos tres";
-    background-image: linear-gradient(135deg, #530ec2, black, #4304a7);
-    border-radius: 10px; }
-    .main-esports .potg .jugadas-container-moba .video-uno {
-      grid-area: uno;
-      margin: 10px; }
-      .main-esports .potg .jugadas-container-moba .video-uno iframe {
-        width: 375px;
-        height: 225px; }
-    .main-esports .potg .jugadas-container-moba .video-dos {
-      grid-area: dos;
-      margin: 10px; }
-      .main-esports .potg .jugadas-container-moba .video-dos iframe {
-        width: 375px;
-        height: 225px; }
-    .main-esports .potg .jugadas-container-moba .video-tres {
-      grid-area: tres;
-      margin: 10px; }
-      .main-esports .potg .jugadas-container-moba .video-tres iframe {
-        width: 375px;
-        height: 225px; }
-  .main-esports .potg .jugadas-container-fighting {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "uno dos tres";
-    background-image: linear-gradient(135deg, #530ec2, black, #4304a7);
-    border-radius: 10px; }
-    .main-esports .potg .jugadas-container-fighting .video-uno {
-      grid-area: uno;
-      margin: 10px; }
-      .main-esports .potg .jugadas-container-fighting .video-uno iframe {
-        width: 375px;
-        height: 225px; }
-    .main-esports .potg .jugadas-container-fighting .video-dos {
-      grid-area: dos;
-      margin: 10px; }
-      .main-esports .potg .jugadas-container-fighting .video-dos iframe {
-        width: 375px;
-        height: 225px; }
-    .main-esports .potg .jugadas-container-fighting .video-tres {
-      grid-area: tres;
-      margin: 10px; }
-      .main-esports .potg .jugadas-container-fighting .video-tres iframe {
-        width: 375px;
-        height: 225px; }
+  .main-esports .potg .jugadas-container-shooter iframe {
+    width: 375px;
+    height: 225px; }
+  .main-esports .potg .jugadas-container-shooter .video-uno {
+    grid-area: uno;
+    margin: 10px; }
+  .main-esports .potg .jugadas-container-shooter .video-dos {
+    grid-area: dos;
+    margin: 10px; }
+  .main-esports .potg .jugadas-container-shooter .video-tres {
+    grid-area: tres;
+    margin: 10px; }
+  .main-esports .potg .jugadas-container-moba iframe {
+    width: 375px;
+    height: 225px; }
+  .main-esports .potg .jugadas-container-moba .video-uno {
+    grid-area: uno;
+    margin: 10px; }
+  .main-esports .potg .jugadas-container-moba .video-dos {
+    grid-area: dos;
+    margin: 10px; }
+  .main-esports .potg .jugadas-container-moba .video-tres {
+    grid-area: tres;
+    margin: 10px; }
+  .main-esports .potg .jugadas-container-fighting iframe {
+    width: 375px;
+    height: 225px; }
+  .main-esports .potg .jugadas-container-fighting .video-uno {
+    grid-area: uno;
+    margin: 10px; }
+  .main-esports .potg .jugadas-container-fighting .video-dos {
+    grid-area: dos;
+    margin: 10px; }
+  .main-esports .potg .jugadas-container-fighting .video-tres {
+    grid-area: tres;
+    margin: 10px; }
   .main-esports .torneos .accordion {
     width: 700px; }
     .main-esports .torneos .accordion .accordion-item h2 {
@@ -374,6 +358,23 @@ footer {
         flex-direction: row-reverse;
         align-items: flex-end;
         margin: 5px 0; }
+
+@media (max-width: 800px) {
+  .main-esports .potg iframe {
+    width: 400px; }
+  .main-esports .torneos .accordion {
+    width: auto; } }
+
+@media (max-width: 675px) {
+  .main-esports .imagen-principal img {
+    width: 100%; } }
+
+@media (max-width: 426px) {
+  .main-esports .potg iframe {
+    width: 95%;
+    height: auto; }
+  .main-esports .torneos .accordion {
+    width: 100%; } }
 
 .main-galeria {
   background-image: linear-gradient(180deg, black, #7c0f0f, black);

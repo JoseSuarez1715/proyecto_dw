@@ -1,0 +1,34 @@
+.potg-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "uno dos tres";
+    background-image: linear-gradient(135deg, rgb(83, 14, 194), black, rgb(67, 4, 167));
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .potg-grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "uno dos"
+            "tres tres";
+    }
+}
+
+@media (max-width: 800px) {
+    .potg-grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "uno"
+            "dos"
+            "tres";
+            border-radius: 0px;
+    }
+}
+

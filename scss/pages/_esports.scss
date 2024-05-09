@@ -15,124 +15,88 @@
 
     .potg {
         .jugadas-container-shooter {
-            display: grid;
-            grid-template-rows: 1fr;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas:
-                "uno dos tres";
-            background-image: linear-gradient(135deg, rgb(83, 14, 194), black, rgb(67, 4, 167));
-            border-radius: 10px;
+            @extend .potg-grid;
+
+            iframe {
+                width: 375px;
+                height: 225px;
+            }
 
             .video-uno {
                 grid-area: uno;
                 margin: 10px;
 
-                iframe {
-                    width: 375px;
-                    height: 225px;
-                }
+
             }
 
             .video-dos {
                 grid-area: dos;
                 margin: 10px;
 
-                iframe {
-                    width: 375px;
-                    height: 225px;
-                }
+
             }
 
             .video-tres {
                 grid-area: tres;
                 margin: 10px;
 
-                iframe {
-                    width: 375px;
-                    height: 225px;
-                }
+
             }
 
         }
 
         .jugadas-container-moba {
-            display: grid;
-            grid-template-rows: 1fr;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas:
-                "uno dos tres";
-            background-image: linear-gradient(135deg, rgb(83, 14, 194), black, rgb(67, 4, 167));
-            border-radius: 10px;
+            @extend .potg-grid;
+
+            iframe {
+                width: 375px;
+                height: 225px;
+            }
 
             .video-uno {
                 grid-area: uno;
                 margin: 10px;
 
-                iframe {
-                    width: 375px;
-                    height: 225px;
-                }
+
             }
 
             .video-dos {
                 grid-area: dos;
                 margin: 10px;
 
-                iframe {
-                    width: 375px;
-                    height: 225px;
-                }
+
             }
 
             .video-tres {
                 grid-area: tres;
                 margin: 10px;
 
-                iframe {
-                    width: 375px;
-                    height: 225px;
-                }
+
             }
 
         }
 
         .jugadas-container-fighting {
-            display: grid;
-            grid-template-rows: 1fr;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas:
-                "uno dos tres";
-            background-image: linear-gradient(135deg, rgb(83, 14, 194), black, rgb(67, 4, 167));
-            border-radius: 10px;
+            @extend .potg-grid;
+
+            iframe {
+                width: 375px;
+                height: 225px;
+            }
 
             .video-uno {
                 grid-area: uno;
                 margin: 10px;
-
-                iframe {
-                    width: 375px;
-                    height: 225px;
-                }
             }
 
             .video-dos {
                 grid-area: dos;
                 margin: 10px;
-
-                iframe {
-                    width: 375px;
-                    height: 225px;
-                }
             }
 
             .video-tres {
                 grid-area: tres;
                 margin: 10px;
-
-                iframe {
-                    width: 375px;
-                    height: 225px;
-                }
             }
 
         }
@@ -305,4 +269,55 @@
         }
 
     }
+}
+
+@media (max-width: 800px) {
+    .main-esports {
+        .potg {
+            iframe {
+                width: 400px;
+            }
+        }
+
+        .torneos {
+            .accordion {
+
+                width: auto;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 675px) {
+
+    .main-esports {
+        .imagen-principal {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 426px) {
+
+    .main-esports {
+        .potg {
+            iframe {
+                width: 95%;
+                height: auto;
+                
+            }
+            
+        }
+        .torneos{
+            .accordion {
+
+                width: 100%;
+        
+            }
+        }
+    }
+
 }
