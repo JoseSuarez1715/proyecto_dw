@@ -3,10 +3,16 @@
     src: url(../resources/tipografia/CounterStreamDemoRegular.ttf);
 }
 
+*/
+
 @font-face {
     font-family: Cronus;
     src: url(../resources/tipografia/Cronus\ Round.otf);
 }
+
+
+
+/*
 
 @font-face {
     font-family: Queen;
@@ -237,14 +243,14 @@ a .img-fluid:hover {
 
 /* sub seccion analisis */
 
-.calificacion {
+/* .calificacion {
     color: white;
 }
 
 .descripcion {
     width: 60%;
     margin-top: 10px;
-}
+} */
 
 
 /* .analisis {

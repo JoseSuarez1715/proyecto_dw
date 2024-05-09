@@ -1,14 +1,14 @@
 @font-face {
   font-family: Cronus;
-  src: url(../../resources/tipografia/Cronus\Round.otf); }
+  src: url(../resources/tipografia/Cronus\Round.otf); }
 
 @font-face {
   font-family: Queen;
-  src: url(../../resources/tipografia/queen-of-camelot-2-0.regular.otf); }
+  src: url(../resources/tipografia/queen-of-camelot-2-0.regular.otf); }
 
 @font-face {
   font-family: Counter;
-  src: url(../../resources/tipografia/CounterStreamDemoRegular.ttf); }
+  src: url(../resources/tipografia/CounterStreamDemoRegular.ttf); }
 
 * {
   margin: 0;
@@ -102,7 +102,9 @@ footer {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 3fr 3fr 1fr;
-    grid-template-areas: "not-uno not-dos aside-uno" "not-tres not-cuatro aside-uno" "not-cinco not-seis aside-uno"; }
+    grid-template-areas: "not-uno not-dos aside-uno"
+ "not-tres not-cuatro aside-uno"
+ "not-cinco not-seis aside-uno"; }
     .main-index .pagina-uno .novedades .novedades-container .noticia-uno {
       grid-area: not-uno; }
     .main-index .pagina-uno .novedades .novedades-container .noticia-dos {
