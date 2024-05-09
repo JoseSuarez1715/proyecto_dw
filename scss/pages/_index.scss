@@ -82,5 +82,23 @@
 
             }
         }
+
+        .analisis {
+            padding-bottom: 60px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .descripcion {
+                width: 60%;
+                margin-top: 10px;
+            }
+
+            .calificacion {
+                color: white;
+            }
+
+        }
     }
 }

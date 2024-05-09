@@ -130,3 +130,14 @@ footer {
         width: 100px; }
       .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos div {
         margin: 0 10px; }
+  .main-index .pagina-uno .analisis {
+    padding-bottom: 60px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-index .pagina-uno .analisis .descripcion {
+      width: 60%;
+      margin-top: 10px; }
+    .main-index .pagina-uno .analisis .calificacion {
+      color: white; }
