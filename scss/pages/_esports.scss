@@ -18,6 +18,9 @@
         iframe{
             width: 460px;
             height: 265px;
+            &:hover {
+                transform: scale(1.5);
+            }
         }
         .jugadas-container-shooter {
             @extend .potg-grid;
