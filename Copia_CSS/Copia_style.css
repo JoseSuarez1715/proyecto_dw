@@ -640,9 +640,9 @@ a .img-fluid:hover {
     } */
 
     /* contacto */
-    .formulario {
+    /* .formulario {
         width: 75%;
-    }
+    } */
 
     /* esports */
 
@@ -791,9 +791,9 @@ a .img-fluid:hover {
 
     /* contacto */
 
-    .carrusel-contacto {
+    /* .carrusel-contacto {
         width: 100%;
-    }
+    } */
 
     /* esports */
 
@@ -842,15 +842,13 @@ a .img-fluid:hover {
 
     /* nosotros */
 
-    .nosotros iframe {
+    /* .nosotros iframe {
         width: 85%;
-    }
+    } */
 
     /* contacto */
 
-    .carrusel-contacto {
-        width: 100%;
-    }
+    
 
     .formulario{
         width: 95%;
