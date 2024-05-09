@@ -154,13 +154,7 @@
 
     .main-index {
         .pagina-uno {
-            .imagen-principal {
-                h1 {
-                    font-size: 4rem;
-                    top: 60px;
-                }
-
-            }
+            
 
             .novedades {
                 .novedades-container {
@@ -190,13 +184,6 @@
 @media (max-width: 767px) {
     .main-index {
         .pagina-uno {
-            .imagen-principal {
-                h1 {
-                    font-size: 3rem;
-                    top: 0px;
-                }
-            }
-
             .novedades {
                 .novedades-container {
                     display: grid;

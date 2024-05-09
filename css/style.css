@@ -14,6 +14,34 @@
   margin: 0;
   padding: 0; }
 
+p {
+  color: white;
+  font-family: galdeano;
+  font-size: 1.2rem; }
+
+.potg-grid, .main-esports .potg .jugadas-container-shooter, .main-esports .potg .jugadas-container-moba, .main-esports .potg .jugadas-container-fighting {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "uno dos tres";
+  background-image: linear-gradient(135deg, #530ec2, black, #4304a7);
+  border-radius: 10px; }
+
+@media (max-width: 1200px) {
+  .potg-grid, .main-esports .potg .jugadas-container-shooter, .main-esports .potg .jugadas-container-moba, .main-esports .potg .jugadas-container-fighting {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "uno dos" "tres tres"; } }
+
+@media (max-width: 800px) {
+  .potg-grid, .main-esports .potg .jugadas-container-shooter, .main-esports .potg .jugadas-container-moba, .main-esports .potg .jugadas-container-fighting {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "uno" "dos" "tres";
+    border-radius: 0px; } }
+
 h1 {
   font-family: Counter;
   font-size: 6rem;
@@ -44,33 +72,23 @@ h4 {
   color: white;
   margin: 15px 0px 15px 0px; }
 
-p {
-  color: white;
-  font-family: galdeano;
-  font-size: 1.2rem; }
+@media (max-width: 1030px) {
+  h1 {
+    font-size: 4rem;
+    top: 60px; } }
 
-.potg-grid, .main-esports .potg .jugadas-container-shooter, .main-esports .potg .jugadas-container-moba, .main-esports .potg .jugadas-container-fighting {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "uno dos tres";
-  background-image: linear-gradient(135deg, #530ec2, black, #4304a7);
-  border-radius: 10px; }
+@media (max-width: 767px) {
+  h1 {
+    font-size: 3rem;
+    top: 10px; } }
 
-@media (max-width: 1200px) {
-  .potg-grid, .main-esports .potg .jugadas-container-shooter, .main-esports .potg .jugadas-container-moba, .main-esports .potg .jugadas-container-fighting {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "uno dos" "tres tres"; } }
-
-@media (max-width: 800px) {
-  .potg-grid, .main-esports .potg .jugadas-container-shooter, .main-esports .potg .jugadas-container-moba, .main-esports .potg .jugadas-container-fighting {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: "uno" "dos" "tres";
-    border-radius: 0px; } }
+@media (max-width: 426px) {
+  h1 {
+    font-size: 2rem; }
+  h2 {
+    font-size: 1.5rem; }
+  h3 {
+    font-size: 1.5rem; } }
 
 .navbar {
   position: sticky;
@@ -192,9 +210,6 @@ footer {
         margin: 0 10px; } }
 
 @media (max-width: 1030px) {
-  .main-index .pagina-uno .imagen-principal h1 {
-    font-size: 4rem;
-    top: 60px; }
   .main-index .pagina-uno .novedades .novedades-container {
     display: grid;
     grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr;
@@ -205,9 +220,6 @@ footer {
     justify-content: space-around; } }
 
 @media (max-width: 767px) {
-  .main-index .pagina-uno .imagen-principal h1 {
-    font-size: 3rem;
-    top: 0px; }
   .main-index .pagina-uno .novedades .novedades-container {
     display: grid;
     grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
