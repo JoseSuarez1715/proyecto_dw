@@ -19,13 +19,29 @@ p {
   font-family: galdeano;
   font-size: 1.2rem; }
 
-.potg-grid, .main-esports .potg .jugadas-container-shooter, .main-esports .potg .jugadas-container-moba, .main-esports .potg .jugadas-container-fighting {
+.pagina-fondo, .pagina-index, .pagina-esports, .pagina-galeria, .pagina-nosotros, .pagina-contacto {
+  background-image: url("../../resources/patron-final.jpg");
+  background-size: 100%; }
+
+.potg-grid, .pagina-esports .main-esports .potg .jugadas-container-shooter, .pagina-esports .main-esports .potg .jugadas-container-moba, .pagina-esports .main-esports .potg .jugadas-container-fighting {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "uno dos tres";
   background-image: linear-gradient(135deg, #530ec2, black, #4304a7);
   border-radius: 10px; }
+
+@keyframes escala {
+  0% {
+    transform: scale(1); }
+  5% {
+    transform: scale(1.1); }
+  15% {
+    transform: scale(1.1); }
+  20% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1); } }
 
 @keyframes colorear {
   0% {
@@ -52,14 +68,14 @@ p {
     color: #ffffff; } }
 
 @media (max-width: 1200px) {
-  .potg-grid, .main-esports .potg .jugadas-container-shooter, .main-esports .potg .jugadas-container-moba, .main-esports .potg .jugadas-container-fighting {
+  .potg-grid, .pagina-esports .main-esports .potg .jugadas-container-shooter, .pagina-esports .main-esports .potg .jugadas-container-moba, .pagina-esports .main-esports .potg .jugadas-container-fighting {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "uno dos" "tres tres"; } }
 
 @media (max-width: 800px) {
-  .potg-grid, .main-esports .potg .jugadas-container-shooter, .main-esports .potg .jugadas-container-moba, .main-esports .potg .jugadas-container-fighting {
+  .potg-grid, .pagina-esports .main-esports .potg .jugadas-container-shooter, .pagina-esports .main-esports .potg .jugadas-container-moba, .pagina-esports .main-esports .potg .jugadas-container-fighting {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
@@ -84,7 +100,9 @@ h2 {
   text-align: center;
   animation-name: grisear;
   animation-duration: 1s;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+  border-top-style: double;
+  border-bottom-style: double; }
 
 h3 {
   color: white;
@@ -123,18 +141,25 @@ h4 {
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 0; }
+  padding: 0;
+  box-shadow: 0 0 20px white; }
   .navbar .container-fluid {
-    background-image: linear-gradient(-90deg, gray, #121277); }
+    background-color: rgba(0, 0, 0, 0.5) !important; }
+    .navbar .container-fluid .navbar-toggler {
+      background-color: white !important; }
     .navbar .container-fluid a img {
       height: 50px; }
     .navbar .container-fluid div a {
       font-family: Queen;
       color: white; }
+    .navbar .container-fluid div .active {
+      color: gray; }
 
 footer {
   height: 150px;
-  background-image: linear-gradient(90deg, gray, #121277); }
+  background-image: url("../../resources/patron-veinte.jpg");
+  background-size: 50%;
+  box-shadow: 0 0 20px white; }
   footer p {
     text-align: center;
     padding-top: 20px;
@@ -149,7 +174,8 @@ footer {
     padding: 0; }
     footer ul img {
       width: 50px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      border: 3px solid white; }
 
 @media (max-width: 675px) {
   footer ul img {
@@ -163,36 +189,58 @@ footer {
     border: 3px solid white;
     transform: scale(1.1); }
 
-.main-index .pagina-uno {
+.pagina-index .main-index {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-image: linear-gradient(180deg, black, #7c0f0f, black, #7c0f0f, black); }
-  .main-index .pagina-uno .imagen-principal {
+  align-items: center; }
+  .pagina-index .main-index .imagen-principal {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative; }
-    .main-index .pagina-uno .imagen-principal video {
+    .pagina-index .main-index .imagen-principal video {
       height: 500px; }
-  .main-index .pagina-uno .novedades .novedades-container {
+  .pagina-index .main-index .novedades .novedades-container {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 3fr 3fr 1fr;
-    grid-template-areas: "not-uno not-dos aside-uno" "not-tres not-cuatro aside-uno" "not-cinco not-seis aside-uno"; }
-    .main-index .pagina-uno .novedades .novedades-container .noticia-uno {
-      grid-area: not-uno; }
-    .main-index .pagina-uno .novedades .novedades-container .noticia-dos {
-      grid-area: not-dos; }
-    .main-index .pagina-uno .novedades .novedades-container .noticia-tres {
-      grid-area: not-tres; }
-    .main-index .pagina-uno .novedades .novedades-container .noticia-cuatro {
-      grid-area: not-cuatro; }
-    .main-index .pagina-uno .novedades .novedades-container .noticia-cinco {
-      grid-area: not-cinco; }
-    .main-index .pagina-uno .novedades .novedades-container .noticia-seis {
-      grid-area: not-seis; }
-    .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos {
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-areas: ". not-uno not-dos aside-uno" ". not-tres not-cuatro aside-uno" ". not-cinco not-seis aside-uno"; }
+    .pagina-index .main-index .novedades .novedades-container .noticia-uno {
+      grid-area: not-uno;
+      animation-name: escala;
+      animation-duration: 12s;
+      animation-iteration-count: infinite; }
+    .pagina-index .main-index .novedades .novedades-container .noticia-dos {
+      grid-area: not-dos;
+      animation-name: escala;
+      animation-delay: 2s;
+      animation-duration: 12s;
+      animation-iteration-count: infinite; }
+    .pagina-index .main-index .novedades .novedades-container .noticia-tres {
+      grid-area: not-tres;
+      animation-name: escala;
+      animation-delay: 4s;
+      animation-duration: 12s;
+      animation-iteration-count: infinite; }
+    .pagina-index .main-index .novedades .novedades-container .noticia-cuatro {
+      grid-area: not-cuatro;
+      animation-name: escala;
+      animation-delay: 6s;
+      animation-duration: 12s;
+      animation-iteration-count: infinite; }
+    .pagina-index .main-index .novedades .novedades-container .noticia-cinco {
+      grid-area: not-cinco;
+      animation-name: escala;
+      animation-delay: 8s;
+      animation-duration: 12s;
+      animation-iteration-count: infinite; }
+    .pagina-index .main-index .novedades .novedades-container .noticia-seis {
+      grid-area: not-seis;
+      animation-name: escala;
+      animation-delay: 10s;
+      animation-duration: 12s;
+      animation-iteration-count: infinite; }
+    .pagina-index .main-index .novedades .novedades-container .proximos-lanzamientos {
       grid-area: aside-uno;
       background-image: linear-gradient(135deg, gray, black, gray);
       border-radius: 10px;
@@ -204,291 +252,334 @@ footer {
       padding: 0 5px;
       text-align: center;
       color: white; }
-      .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos img {
+      .pagina-index .main-index .novedades .novedades-container .proximos-lanzamientos img {
         width: 100px; }
-      .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos div {
+      .pagina-index .main-index .novedades .novedades-container .proximos-lanzamientos div {
         margin: 0 10px; }
-  .main-index .pagina-uno .analisis {
-    padding-bottom: 60px;
-    margin-top: 50px;
+  .pagina-index .main-index .analisis {
+    width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: center; }
-    .main-index .pagina-uno .analisis .descripcion {
-      width: 60%;
-      margin-top: 10px; }
-    .main-index .pagina-uno .analisis .calificacion {
-      color: white; }
+    padding-bottom: 50px; }
+    .pagina-index .main-index .analisis .analisis-menu {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 0 5px;
+      text-align: center; }
+      .pagina-index .main-index .analisis .analisis-menu div:not(.analisis-menu-titulo) {
+        padding: 10px;
+        border-radius: 10px;
+        background-image: linear-gradient(135deg, gray, black, gray); }
+        .pagina-index .main-index .analisis .analisis-menu div:not(.analisis-menu-titulo):hover {
+          box-shadow: 0 0 20px white; }
+      .pagina-index .main-index .analisis .analisis-menu a {
+        text-decoration: none;
+        color: white; }
+      .pagina-index .main-index .analisis .analisis-menu .analisis-menu-titulo {
+        display: block;
+        width: 100%; }
+    .pagina-index .main-index .analisis .analisis-descripciones {
+      background-color: rgba(0, 0, 0, 0.2);
+      background-size: contain;
+      padding-bottom: 60px;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .pagina-index .main-index .analisis .analisis-descripciones .card {
+        padding-top: 60px; }
+      .pagina-index .main-index .analisis .analisis-descripciones .descripcion-volver {
+        text-decoration: none;
+        color: white;
+        align-self: flex-start;
+        border-radius: 10px;
+        background-image: linear-gradient(135deg, gray, black, gray); }
+        .pagina-index .main-index .analisis .analisis-descripciones .descripcion-volver:hover {
+          box-shadow: 0 0 20px white; }
+        .pagina-index .main-index .analisis .analisis-descripciones .descripcion-volver p {
+          font-size: 1rem; }
+      .pagina-index .main-index .analisis .analisis-descripciones .descripcion {
+        margin-top: 10px; }
+      .pagina-index .main-index .analisis .analisis-descripciones .calificacion {
+        color: white; }
 
 @media (max-width: 1200px) {
-  .main-index .pagina-uno .imagen-principal video {
+  .pagina-index .main-index .imagen-principal video {
     width: 100%;
     height: auto; }
-  .main-index .pagina-uno .novedades .novedades-container {
+  .pagina-index .main-index .novedades .novedades-container {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 2fr 2fr;
     grid-template-areas: "not-uno not-dos" "not-tres not-cuatro" "not-cinco not-seis" "aside-uno aside-uno"; }
-    .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos {
+    .pagina-index .main-index .novedades .novedades-container .proximos-lanzamientos {
       flex-direction: row;
       justify-content: space-evenly;
       flex-wrap: wrap; }
-      .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos .proximos-lanzamientos-titulo {
+      .pagina-index .main-index .novedades .novedades-container .proximos-lanzamientos .proximos-lanzamientos-titulo {
         display: block;
         width: 100%; }
-      .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos img {
+      .pagina-index .main-index .novedades .novedades-container .proximos-lanzamientos img {
         width: 100px; }
-      .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos div {
+      .pagina-index .main-index .novedades .novedades-container .proximos-lanzamientos div {
         margin: 0 10px; } }
 
 @media (max-width: 1030px) {
-  .main-index .pagina-uno .novedades .novedades-container {
+  .pagina-index .main-index .novedades .novedades-container {
     display: grid;
     grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr;
     grid-template-columns: 4fr 1fr;
     grid-template-areas: "not-uno aside-uno" "not-dos aside-uno" "not-tres aside-uno" "not-cuatro aside-uno" "not-cinco ." "not-seis ."; }
-  .main-index .pagina-uno .novedades .proximos-lanzamientos {
+  .pagina-index .main-index .novedades .proximos-lanzamientos {
     flex-direction: column;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+  .pagina-index .main-index .analisis {
+    width: 90%; } }
 
 @media (max-width: 767px) {
-  .main-index .pagina-uno .novedades .novedades-container {
+  .pagina-index .main-index .novedades .novedades-container {
     display: grid;
     grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "not-uno" "not-dos" "not-tres" "not-cuatro" "not-cinco " "not-seis " "aside-uno"; }
-    .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos {
+    .pagina-index .main-index .novedades .novedades-container .proximos-lanzamientos {
       flex-direction: row;
       justify-content: space-evenly;
       align-items: baseline;
       flex-wrap: wrap; } }
 
 @media (max-width: 675px) {
-  .main-index .pagina-uno .novedades .novedades-container {
+  .pagina-index .main-index .novedades .novedades-container {
     grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 3fr; }
-    .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos {
+    .pagina-index .main-index .novedades .novedades-container .proximos-lanzamientos {
       height: 600px;
       flex-direction: column;
       align-items: center; }
-  .main-index .pagina-uno .analisis .descripcion {
+  .pagina-index .main-index .analisis .descripcion {
     width: 90%; } }
 
 @media (max-width: 426px) {
-  .main-index .pagina-uno .novedades .novedades-container {
+  .pagina-index .main-index .novedades .novedades-container {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr; }
-    .main-index .pagina-uno .novedades .novedades-container .proximos-lanzamientos {
-      height: 700px; } }
+    .pagina-index .main-index .novedades .novedades-container .proximos-lanzamientos {
+      height: 700px; }
+  .pagina-index .main-index .analisis .analisis-menu {
+    flex-direction: column; }
+    .pagina-index .main-index .analisis .analisis-menu div {
+      margin: 10px 0; } }
 
-.main-esports {
-  background-image: linear-gradient(180deg, black, #7c0f0f, black);
+.pagina-esports .main-esports {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding-bottom: 30px; }
-  .main-esports .imagen-principal img {
+  .pagina-esports .main-esports .imagen-principal img {
     width: 60%;
     height: auto; }
-  .main-esports .potg {
+  .pagina-esports .main-esports .potg {
     width: 90%; }
-    .main-esports .potg iframe {
+    .pagina-esports .main-esports .potg iframe {
       width: 460px;
       height: 265px; }
-      .main-esports .potg iframe:hover {
-        transform: scale(1.5); }
-    .main-esports .potg .jugadas-container-shooter .video-uno {
+      .pagina-esports .main-esports .potg iframe:hover {
+        transition: 1s;
+        transform: scale(1.3); }
+    .pagina-esports .main-esports .potg .jugadas-container-shooter .video-uno {
       grid-area: uno;
       margin: 10px; }
-    .main-esports .potg .jugadas-container-shooter .video-dos {
+    .pagina-esports .main-esports .potg .jugadas-container-shooter .video-dos {
       grid-area: dos;
       margin: 10px; }
-    .main-esports .potg .jugadas-container-shooter .video-tres {
+    .pagina-esports .main-esports .potg .jugadas-container-shooter .video-tres {
       grid-area: tres;
       margin: 10px; }
-    .main-esports .potg .jugadas-container-moba .video-uno {
+    .pagina-esports .main-esports .potg .jugadas-container-moba .video-uno {
       grid-area: uno;
       margin: 10px; }
-    .main-esports .potg .jugadas-container-moba .video-dos {
+    .pagina-esports .main-esports .potg .jugadas-container-moba .video-dos {
       grid-area: dos;
       margin: 10px; }
-    .main-esports .potg .jugadas-container-moba .video-tres {
+    .pagina-esports .main-esports .potg .jugadas-container-moba .video-tres {
       grid-area: tres;
       margin: 10px; }
-    .main-esports .potg .jugadas-container-fighting .video-uno {
+    .pagina-esports .main-esports .potg .jugadas-container-fighting .video-uno {
       grid-area: uno;
       margin: 10px; }
-    .main-esports .potg .jugadas-container-fighting .video-dos {
+    .pagina-esports .main-esports .potg .jugadas-container-fighting .video-dos {
       grid-area: dos;
       margin: 10px; }
-    .main-esports .potg .jugadas-container-fighting .video-tres {
+    .pagina-esports .main-esports .potg .jugadas-container-fighting .video-tres {
       grid-area: tres;
       margin: 10px; }
-  .main-esports .torneos .accordion {
+  .pagina-esports .main-esports .torneos .accordion {
     width: 700px; }
-    .main-esports .torneos .accordion .accordion-item h2 {
+    .pagina-esports .main-esports .torneos .accordion .accordion-item h2 {
       margin: 20px 0 0 0; }
-      .main-esports .torneos .accordion .accordion-item h2 button {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item h2 button {
         background-image: linear-gradient(90deg, gray, white, gray);
         text-align: center; }
-        .main-esports .torneos .accordion .accordion-item h2 button img {
+        .pagina-esports .main-esports .torneos .accordion .accordion-item h2 button img {
           height: 50px;
           width: 50px;
           margin-right: 10px; }
-        .main-esports .torneos .accordion .accordion-item h2 button .torneo-acordion-nombre {
+        .pagina-esports .main-esports .torneos .accordion .accordion-item h2 button .torneo-acordion-nombre {
           color: black;
           text-align: center;
           font-size: 2rem;
           margin: 0 50px;
           font-family: Queen; }
-    .main-esports .torneos .accordion .accordion-item .accordion-body {
+    .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body {
       padding: 0 20px;
       /* clases equipos del lado izquierdo */
       /* clases equipos del lado derecho */ }
-      .main-esports .torneos .accordion .accordion-item .accordion-body .container-torneo-uno {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .container-torneo-uno {
         display: grid;
         grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 3fr 1fr 3fr;
         grid-template-areas: "fase fase fase" "team-uno . team-cinco" "team-dos versus team-seis" "team-tres versus team-siete" "team-cuatro . team-ocho";
         background-image: linear-gradient(90deg, white, gray, white); }
-      .main-esports .torneos .accordion .accordion-item .accordion-body .container-torneo-dos {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .container-torneo-dos {
         display: grid;
         grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 3fr 1fr 3fr;
         grid-template-areas: "fase fase fase" "team-uno . team-cinco" ". versus ." ". versus ." "team-cuatro . team-ocho";
         background-image: linear-gradient(90deg, white, gray, white); }
-      .main-esports .torneos .accordion .accordion-item .accordion-body p {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body p {
         color: black; }
-      .main-esports .torneos .accordion .accordion-item .accordion-body img {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body img {
         width: 50px;
         margin: 5px; }
-      .main-esports .torneos .accordion .accordion-item .accordion-body .acordion-grilla-fase {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .acordion-grilla-fase {
         grid-area: fase; }
-        .main-esports .torneos .accordion .accordion-item .accordion-body .acordion-grilla-fase p {
+        .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .acordion-grilla-fase p {
           padding-top: 15px;
           font-family: Queen;
           color: black; }
-      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-uno {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-uno {
         grid-area: team-uno; }
-      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-dos {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-dos {
         grid-area: team-dos; }
-      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-tres {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-tres {
         grid-area: team-tres; }
-      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-cuatro {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-cuatro {
         grid-area: team-cuatro; }
-      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-vs {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-vs {
         grid-area: versus;
         display: flex;
         flex-direction: column;
         justify-content: center; }
-        .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-vs p {
+        .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-vs p {
           font-size: 2rem; }
-      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-cinco {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-cinco {
         grid-area: team-cinco; }
-      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-seis {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-seis {
         grid-area: team-seis; }
-      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-siete {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-siete {
         grid-area: team-siete; }
-      .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-ocho {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .grilla-nombre-ocho {
         grid-area: team-ocho; }
-      .main-esports .torneos .accordion .accordion-item .accordion-body .izquierdo {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .izquierdo {
         display: flex;
         flex-direction: row;
         align-items: flex-end;
         margin: 5px 0; }
-      .main-esports .torneos .accordion .accordion-item .accordion-body .derecho {
+      .pagina-esports .main-esports .torneos .accordion .accordion-item .accordion-body .derecho {
         display: flex;
         flex-direction: row-reverse;
         align-items: flex-end;
         margin: 5px 0; }
 
 @media (max-width: 1600px) {
-  .main-esports .potg iframe {
+  .pagina-esports .main-esports .potg iframe {
     height: 250px;
     width: 350px; } }
 
 @media (max-width: 800px) {
-  .main-esports .potg iframe {
+  .pagina-esports .main-esports .potg iframe {
     width: 100%; }
-  .main-esports .torneos .accordion {
+  .pagina-esports .main-esports .torneos .accordion {
     width: auto; } }
 
 @media (max-width: 675px) {
-  .main-esports .imagen-principal img {
+  .pagina-esports .main-esports .imagen-principal img {
     width: 100%; } }
 
 @media (max-width: 426px) {
-  .main-esports .torneos .accordion {
+  .pagina-esports .main-esports .torneos .accordion {
     width: 100%; } }
 
-.main-galeria {
-  background-image: linear-gradient(180deg, black, #7c0f0f, black);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center; }
-  .main-galeria p {
-    padding: 0 10px; }
-  .main-galeria img {
-    width: 60%;
-    height: auto; }
-  .main-galeria .carrousel-galeria {
-    width: 700px;
-    margin-bottom: 20px; }
-    .main-galeria .carrousel-galeria img {
-      height: 500px; }
-
-@media (max-width: 1200px) {
-  .main-galeria img {
-    width: 80%;
-    height: auto; }
-  .main-galeria .carrousel-galeria {
-    width: 500px; }
-    .main-galeria .carrousel-galeria img {
-      height: 400px; } }
-
-@media (max-width: 767px) {
-  .main-galeria .carrousel-galeria {
-    width: 400px; }
-    .main-galeria .carrousel-galeria img {
-      height: 300px; } }
-
-@media (max-width: 675px) {
-  .main-galeria img {
-    width: 100%;
-    height: auto; }
-  .main-galeria .carrousel-galeria {
-    width: 350px; }
-    .main-galeria .carrousel-galeria img {
-      height: 220px; } }
-
-@media (max-width: 426px) {
-  .main-galeria .carrousel-galeria {
-    width: 100%;
-    padding: 15px 10px; }
-    .main-galeria .carrousel-galeria img {
-      height: 200px; } }
-
-.main-nosotros {
-  background-image: linear-gradient(180deg, black, #7c0f0f, black);
+.pagina-galeria .main-galeria {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-bottom: 30px; }
-  .main-nosotros .imagen-principal {
+  margin-top: 20px; }
+  .pagina-galeria .main-galeria p {
+    padding: 0 10px; }
+  .pagina-galeria .main-galeria img {
+    width: 60%;
+    height: auto; }
+  .pagina-galeria .main-galeria .carrousel-galeria {
+    width: 700px;
+    margin-bottom: 20px; }
+    .pagina-galeria .main-galeria .carrousel-galeria img {
+      height: 500px; }
+
+@media (max-width: 1200px) {
+  .pagina-galeria .main-galeria img {
+    width: 80%;
+    height: auto; }
+  .pagina-galeria .main-galeria .carrousel-galeria {
+    width: 500px; }
+    .pagina-galeria .main-galeria .carrousel-galeria img {
+      height: 400px; } }
+
+@media (max-width: 767px) {
+  .pagina-galeria .main-galeria .carrousel-galeria {
+    width: 400px; }
+    .pagina-galeria .main-galeria .carrousel-galeria img {
+      height: 300px; } }
+
+@media (max-width: 675px) {
+  .pagina-galeria .main-galeria img {
+    width: 100%;
+    height: auto; }
+  .pagina-galeria .main-galeria .carrousel-galeria {
+    width: 350px; }
+    .pagina-galeria .main-galeria .carrousel-galeria img {
+      height: 220px; } }
+
+@media (max-width: 426px) {
+  .pagina-galeria .main-galeria .carrousel-galeria {
+    width: 100%;
+    padding: 15px 10px; }
+    .pagina-galeria .main-galeria .carrousel-galeria img {
+      height: 200px; } }
+
+.pagina-nosotros .main-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 30px;
+  margin-top: 20px; }
+  .pagina-nosotros .main-nosotros .imagen-principal {
     width: 60%; }
-  .main-nosotros h3 {
+  .pagina-nosotros .main-nosotros h3 {
     font-size: 2rem;
     padding-top: 30px; }
-  .main-nosotros div img {
+  .pagina-nosotros .main-nosotros div img {
     width: 300px;
     height: auto;
     display: inline;
     margin: 15px; }
-  .main-nosotros p {
+  .pagina-nosotros .main-nosotros p {
     margin: 20px 0px 30px 0px;
     width: 75%; }
-  .main-nosotros iframe {
+  .pagina-nosotros .main-nosotros iframe {
     width: 400px;
     height: 300px; }
 
@@ -505,33 +596,32 @@ footer {
     width: 85%;
     height: auto; } }
 
-.main-contacto {
-  background-image: linear-gradient(180deg, black, #7c0f0f, black);
+.pagina-contacto .main-contacto {
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .main-contacto .carrusel-contacto {
+  .pagina-contacto .main-contacto .carrusel-contacto {
     width: 60%; }
-  .main-contacto .formulario {
+  .pagina-contacto .main-contacto .formulario {
     width: 50%;
     margin-bottom: 20px; }
-    .main-contacto .formulario .mb-3 {
+    .pagina-contacto .main-contacto .formulario .mb-3 {
       margin-top: 20px; }
-      .main-contacto .formulario .mb-3 .form-text {
+      .pagina-contacto .main-contacto .formulario .mb-3 .form-text {
         color: white;
         font-family: galdeano; }
-      .main-contacto .formulario .mb-3 .form-label {
+      .pagina-contacto .main-contacto .formulario .mb-3 .form-label {
         font-size: 1.2rem; }
 
 @media (max-width: 1030px) {
-  .main-contacto .formulario {
+  .pagina-contacto .main-contacto .formulario {
     width: 75%; } }
 
 @media (max-width: 675px) {
-  .main-contacto .carrusel-contacto {
+  .pagina-contacto .main-contacto .carrusel-contacto {
     width: 100%; } }
 
 @media (max-width: 426px) {
-  .main-contacto .formulario {
+  .pagina-contacto .main-contacto .formulario {
     width: 95%; } }

@@ -19,6 +19,9 @@ h2 {
     animation-name: grisear;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+    border-top-style:double;
+    border-bottom-style: double;
+    
 
 }
 
@@ -39,6 +42,8 @@ h4 {
     color: white;
     margin: 15px 0px 15px 0px;
 }
+
+
 
 @media (max-width: 1030px) {
     h1 {

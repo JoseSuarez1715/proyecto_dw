@@ -3,9 +3,15 @@
     top: 0;
     z-index: 1000;
     padding: 0;
+    box-shadow: 0 0 20px white;
+
 
     .container-fluid {
-        background-image: linear-gradient(-90deg, gray, rgb(18, 18, 119));
+        background-color: rgba(0, 0, 0, 0.5) !important;
+
+        .navbar-toggler {
+            background-color: white !important;
+        }
 
         a {
             img {
@@ -18,6 +24,10 @@
             a {
                 font-family: $fuente-subtitulo;
                 color: white;
+            }
+
+            .active {
+                color: gray;
             }
 
         }

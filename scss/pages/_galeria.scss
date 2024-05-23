@@ -1,98 +1,108 @@
-.main-galeria {
-    background-image: linear-gradient(180deg, black, rgb(124, 15, 15), black);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    p {
-        padding: 0 10px;
-    }
-
-    img {
-        width: 60%;
-        height: auto;
-    }
-
-    .carrousel-galeria {
-        width: 700px;
-        margin-bottom: 20px;
-
-        img {
-            height: 500px;
-        }
-    }
-
-}
-
-
-@media (max-width: 1200px) {
+.pagina-galeria {
+    @extend .pagina-fondo;
 
     .main-galeria {
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+
+        p {
+            padding: 0 10px;
+        }
+
         img {
-            width: 80%;
+            width: 60%;
             height: auto;
         }
 
         .carrousel-galeria {
-            width: 500px;
+            width: 700px;
+            margin-bottom: 20px;
 
             img {
-                height: 400px;
+                height: 500px;
             }
         }
 
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .pagina-galeria {
+        .main-galeria {
+
+            img {
+                width: 80%;
+                height: auto;
+            }
+
+            .carrousel-galeria {
+                width: 500px;
+
+                img {
+                    height: 400px;
+                }
+            }
+
+        }
     }
 }
 
 @media (max-width: 767px) {
+    .pagina-galeria {
+        .main-galeria {
 
-    .main-galeria {
+            .carrousel-galeria {
+                width: 400px;
 
-        .carrousel-galeria {
-            width: 400px;
-
-            img {
-                height: 300px;
+                img {
+                    height: 300px;
+                }
             }
-        }
 
+        }
     }
 }
 
 @media (max-width: 675px) {
-
-    .main-galeria {
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-
-        .carrousel-galeria {
-            width: 350px;
+    .pagina-galeria {
+        .main-galeria {
 
             img {
-                height: 220px;
+                width: 100%;
+                height: auto;
             }
-        }
 
+            .carrousel-galeria {
+                width: 350px;
+
+                img {
+                    height: 220px;
+                }
+            }
+
+        }
     }
 }
 
 @media (max-width: 426px) {
+    .pagina-galeria {
+        .main-galeria {
 
-    .main-galeria {
+            .carrousel-galeria {
+                width: 100%;
+                padding: 15px 10px;
 
-        .carrousel-galeria {
-            width: 100%;
-            padding: 15px 10px;
-
-            img {
-                height: 200px;
+                img {
+                    height: 200px;
+                }
             }
-        }
 
+        }
     }
 }

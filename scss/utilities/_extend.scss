@@ -1,5 +1,10 @@
+.pagina-fondo{
+    background-image: url("../../resources/patron-final.jpg");
+    background-size: 100%;
+}
+
 .potg-grid {
-    
+
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -9,40 +14,66 @@
     border-radius: 10px;
 }
 
-// keyframes
-@keyframes colorear {
+@keyframes escala {
     0%{
-        color:#ffc003;
+        transform: scale(1);
     }
-    25%{
-        color:#b38809;
+    5%{
+        transform: scale(1.1);
     }
-    50%{
-        color:#8a6a0d;
+    15%{
+        transform: scale(1.1);
     }
-    75%{
-        color:#b38809;
+    20%{
+        transform: scale(1);
     }
     100%{
-        color:#efb810;
+        transform: scale(1);
+    }
+}
+
+// keyframes
+@keyframes colorear {
+    0% {
+        color: #ffc003;
+    }
+
+    25% {
+        color: #b38809;
+    }
+
+    50% {
+        color: #8a6a0d;
+    }
+
+    75% {
+        color: #b38809;
+    }
+
+    100% {
+        color: #efb810;
     }
 }
 
 @keyframes grisear {
-    0%{
-        color:#ffffff;
+    0% {
+        color: #ffffff;
     }
-    25%{
-        color:#e9e9e9;
+
+    25% {
+        color: #e9e9e9;
     }
-    50%{
-        color:#7e7d7a;
+
+    50% {
+        color: #7e7d7a;
     }
-    75%{
-        color:#dadada;
+
+    75% {
+        color: #dadada;
     }
-    100%{
-        color:#ffffff;
+
+    100% {
+        color: #ffffff;
     }
 }
 
@@ -50,7 +81,7 @@
 
 
 @media (max-width: 1200px) {
-    .potg-grid{
+    .potg-grid {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -61,7 +92,7 @@
 }
 
 @media (max-width: 800px) {
-    .potg-grid{
+    .potg-grid {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
@@ -69,7 +100,6 @@
             "uno"
             "dos"
             "tres";
-            border-radius: 0px;
+        border-radius: 0px;
     }
 }
-

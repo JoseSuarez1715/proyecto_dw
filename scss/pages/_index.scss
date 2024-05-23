@@ -1,9 +1,15 @@
-.main-index {
-    .pagina-uno {
+.pagina-index {
+    @extend .pagina-fondo;
+
+    .main-index {
+
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: linear-gradient(180deg, black, rgb(124, 15, 15), black, rgb(124, 15, 15), black);
+        // background-image: linear-gradient(180deg, black, rgb(124, 15, 15), black, rgb(124, 15, 15), black);
+
+        // background-image: url("../resources/patron-lol.jpg");
+        // background-size: 10%;
 
         .imagen-principal {
             display: flex;
@@ -19,42 +25,65 @@
         }
 
         .novedades {
+            // background-color: rgba(0, 0, 0, 0.6);
 
             .novedades-container {
                 display: grid;
                 grid-template-rows: 1fr 1fr 1fr;
-                grid-template-columns: 3fr 3fr 1fr;
+                grid-template-columns: 1fr 3fr 3fr 1fr;
                 grid-template-areas:
-                    "not-uno not-dos aside-uno"
-                    "not-tres not-cuatro aside-uno"
-                    "not-cinco not-seis aside-uno";
+                    ". not-uno not-dos aside-uno"
+                    ". not-tres not-cuatro aside-uno"
+                    ". not-cinco not-seis aside-uno";
 
                 .noticia-uno {
                     grid-area: not-uno;
+                    animation-name: escala;
+                    animation-duration: 12s;
+                    animation-iteration-count: infinite;
                 }
 
                 .noticia-dos {
                     grid-area: not-dos;
-
+                    animation-name: escala;
+                    animation-delay: 2s;
+                    animation-duration: 12s;
+                    animation-iteration-count: infinite;
                 }
 
                 .noticia-tres {
                     grid-area: not-tres;
+                    animation-name: escala;
+                    animation-delay: 4s;
+                    animation-duration: 12s;
+                    animation-iteration-count: infinite;
 
                 }
 
                 .noticia-cuatro {
                     grid-area: not-cuatro;
+                    animation-name: escala;
+                    animation-delay: 6s;
+                    animation-duration: 12s;
+                    animation-iteration-count: infinite;
 
                 }
 
                 .noticia-cinco {
                     grid-area: not-cinco;
+                    animation-name: escala;
+                    animation-delay: 8s;
+                    animation-duration: 12s;
+                    animation-iteration-count: infinite;
 
                 }
 
                 .noticia-seis {
                     grid-area: not-seis;
+                    animation-name: escala;
+                    animation-delay: 10s;
+                    animation-duration: 12s;
+                    animation-iteration-count: infinite;
 
                 }
 
@@ -86,28 +115,91 @@
         }
 
         .analisis {
-            padding-bottom: 60px;
-            margin-top: 50px;
+            width: 60%;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            padding-bottom: 50px;
 
-            .descripcion {
-                width: 60%;
-                margin-top: 10px;
+            .analisis-menu {
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                padding: 0 5px;
+                text-align: center;
+
+                div:not(.analisis-menu-titulo) {
+                    padding: 10px;
+                    border-radius: 10px;
+                    background-image: linear-gradient(135deg, gray, black, gray);
+
+                    &:hover {
+                        box-shadow: 0 0 20px white;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .analisis-menu-titulo {
+                    display: block;
+                    width: 100%;
+                }
             }
 
-            .calificacion {
-                color: white;
+            .analisis-descripciones {
+                background-color: rgba(0, 0, 0, 0.2);
+                background-size: contain;
+                padding-bottom: 60px;
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .card {
+                    padding-top: 60px;
+                }
+
+                .descripcion-volver {
+                    text-decoration: none;
+                    color: white;
+                    align-self: flex-start;
+
+                    &:hover {
+                        box-shadow: 0 0 20px white;
+                    }
+
+                    border-radius: 10px;
+                    background-image: linear-gradient(135deg, gray, black, gray);
+
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+
+                .descripcion {
+
+                    margin-top: 10px;
+                }
+
+                .calificacion {
+                    color: white;
+                }
             }
 
         }
+
     }
 }
 
 @media (max-width: 1200px) {
-    .main-index {
-        .pagina-uno {
+    .pagina-index {
+        .main-index {
+
             .imagen-principal {
                 video {
                     width: 100%;
@@ -147,14 +239,15 @@
                     }
                 }
             }
+
         }
     }
 }
 
 @media (max-width: 1030px) {
+    .pagina-index {
+        .main-index {
 
-    .main-index {
-        .pagina-uno {
 
 
             .novedades {
@@ -177,14 +270,21 @@
                     justify-content: space-around;
                 }
             }
+
+
+            .analisis {
+                width: 90%;
+            }
+
         }
     }
 
 }
 
 @media (max-width: 767px) {
-    .main-index {
-        .pagina-uno {
+    .pagina-index {
+        .main-index {
+
             .novedades {
                 .novedades-container {
                     display: grid;
@@ -207,14 +307,15 @@
                     }
                 }
             }
+
         }
     }
 }
 
 @media (max-width: 675px) {
+    .pagina-index {
+        .main-index {
 
-    .main-index {
-        .pagina-uno {
             .novedades {
                 .novedades-container {
                     grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 3fr;
@@ -232,15 +333,16 @@
                     width: 90%;
                 }
             }
-        }
-    }
 
+        }
+
+    }
 }
 
 @media (max-width: 426px) {
+    .pagina-index {
+        .main-index {
 
-    .main-index {
-        .pagina-uno {
             .novedades {
                 .novedades-container {
                     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
@@ -251,7 +353,17 @@
                 }
             }
 
-        }
-    }
+            .analisis {
+                .analisis-menu {
+                    flex-direction: column;
 
+                    div {
+                        margin: 10px 0;
+                    }
+                }
+            }
+
+        }
+
+    }
 }

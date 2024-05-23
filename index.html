@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="En Arkanoid games encontraras las ultimas noticias sobre el mundo gaming, analisis, esports, torneos. inscribite">
+    <meta name="description"
+        content="En Arkanoid games encontraras las ultimas noticias sobre el mundo gaming, analisis, esports, torneos. inscribite">
     <meta name="keywords" content="Gaming, esports, noticias, torneos">
     <link rel="shortcut icon" href="./resources/icono-pagina-dos.png">
     <title>Inicio | Arkanoid games</title>
@@ -13,11 +14,11 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="pagina-index">
     <!-- navbar -->
     <!-- agrego clase "margen-bar" para quitar el padding -->
     <!-- cambio breakpoint lg por md -->
-    <nav class="navbar navbar-expand-md bg-body-tertiary margen-bar">
+    <nav class="navbar navbar-expand-md  margen-bar">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html"><img src="./resources/logo.png" alt="logo arkanoid games"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -51,162 +52,183 @@
         </div>
     </nav>
     <main class="main-index">
-        <section class="pagina-uno">
-            <section class="imagen-principal">
-                <h1>Arkanoid games</h1>
-                <video src="./resources/video-uno-uno.mp4" autoplay muted loop></video>
+
+        <section class="imagen-principal">
+            <h1>Arkanoid games</h1>
+            <video src="./resources/video-uno-uno.mp4" autoplay muted loop></video>
+        </section>
+        <h2>Enterate de las ultimas novedades del mundo del gaming</h2>
+        <section class="novedades">
+
+            <!-- seis cards horizontales para noticias -->
+            <section class="novedades-container">
+                <div class="card mb-3 noticia-uno" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <a
+                                href="https://www.infobae.com/malditos-nerds/2024/03/22/dragons-dogma-2-rompe-records-en-steam-a-pesar-de-la-controversia-por-sus-microtransacciones/"><img
+                                    src="./resources/dd2.jpg" class="img-fluid rounded-start"
+                                    alt="caballero con armadura"></a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <a
+                                    href="https://www.infobae.com/malditos-nerds/2024/03/22/dragons-dogma-2-rompe-records-en-steam-a-pesar-de-la-controversia-por-sus-microtransacciones/">
+                                    <h5 class="card-title">Dragon Dogma 2 - Record y polemica</h5>
+                                </a>
+                                <p class="card-text">El flamante RPG se convirtió en el single player más
+                                    exitoso en la historia de la compañía, pero persiste la polémica por las
+                                    compras in-game</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 noticia-dos" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <a href="https://www.streetfighter.com/6/es-us/character/ed"><img
+                                    src="./resources/ed sf6.jpg" class="img-fluid rounded-start" alt="personaje Ed"></a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <a href="https://www.streetfighter.com/6/es-us/character/ed">
+                                    <h5 class="card-title">Street Fighter 6 - Nuevo personaje</h5>
+                                </a>
+                                <p class="card-text">Ed: Un joven con Psycho Power que maduró a la
+                                    fuerza por los experimentos de Shadaloo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 noticia-tres" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <a
+                                href="https://overwatch.blizzard.com/es-es/news/24072105/ahonda-en-la-competici%C3%B3n-en-la-temporada-10-de-overwatch-2/"><img
+                                    src="./resources/moira.jpeg" class="img-fluid rounded-start" alt="moira"></a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <a
+                                    href="https://overwatch.blizzard.com/es-es/news/24072105/ahonda-en-la-competici%C3%B3n-en-la-temporada-10-de-overwatch-2/">
+                                    <h5 class="card-title">Overwatch 2 - season 10</h5>
+                                </a>
+                                <p class="card-text">Descubre un mundo del revés en una aventura con la realidad
+                                    alterada: Alterwatch.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 noticia-cuatro" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <a
+                                href="https://es.ign.com/stardew-valley/202185/news/la-16-de-stardew-valley-esta-repleta-de-contenido-pero-los-fans-solo-quieren-una-cosa"><img
+                                    src="./resources/stardew.png" class="img-fluid rounded-start"
+                                    alt="casa y granja del juego"></a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <a
+                                    href="https://es.ign.com/stardew-valley/202185/news/la-16-de-stardew-valley-esta-repleta-de-contenido-pero-los-fans-solo-quieren-una-cosa">
+                                    <h5 class="card-title">Stardew Valley - Novedades</h5>
+                                </a>
+                                <p class="card-text">Lanza una nueva actualización con más contenido para los
+                                    usuarios de PC.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 noticia-cinco" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <a
+                                href="https://www.vidaextra.com/series/definitivamente-creo-que-podria-funcionar-rod-fergusson-jefe-diablo-desearia-que-existiese-serie-television-saga"><img
+                                    src="https://blz-contentstack-images.akamaized.net/v3/assets/blt77f4425de611b362/bltb6866a66b7a9e0f4/659ef28ffad2f45d1d6c6112/D4_S3_Homepage-Feature_Key-Art_960x540.webp?"
+                                    class="img-fluid rounded-start" alt="constructo contra hechicera"></a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <a
+                                    href="https://www.vidaextra.com/series/definitivamente-creo-que-podria-funcionar-rod-fergusson-jefe-diablo-desearia-que-existiese-serie-television-saga">
+                                    <h5 class="card-title">Diablo IV - Se viene una serie?</h5>
+                                </a>
+                                <p class="card-text">Blizzard habla claro sobre una serie o pelicula de Diablo
+                                    tras el éxito de Fallout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 noticia-seis" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <a href="https://es.bandainamcoent.eu/elden-ring/elden-ring/shadow-of-the-erdtree"><img
+                                    src="./resources/elden ring.png" class="img-fluid rounded-start"
+                                    alt="caballero cayendo"></a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <a href="https://es.bandainamcoent.eu/elden-ring/elden-ring/shadow-of-the-erdtree">
+                                    <h5 class="card-title">Elden Ring - 'Shadow of the Erdtree'</h5>
+                                </a>
+                                <p class="card-text">El primer DLC de Elden Ring, 'Shadow of the Erdtree' se
+                                    revela en un trailer siniestro y espectacular que anuncia fecha.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- area de proximos lanzamientos -->
+                <aside class="proximos-lanzamientos">
+                    <div class="proximos-lanzamientos-titulo">
+                        <h4>Proximos Lanzamientos</h4>
+                    </div>
+                    <div>
+                        <p>26/04</p>
+                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202402/2706/762d22b1f0506582e0c2be6d6f1fb08ef1e6917ce8d25618.png?w=440"
+                            alt="tanque animado en desierto">
+                        <h5>Sand land</h5>
+                    </div>
+                    <div>
+                        <p>26/04</p>
+                        <img src="https://img.asmedia.epimg.net/resizer/v2/WTHUF73WHBB7HE6KOBQITP6R3E.jpeg?auth=bc3dddbc08c7a3dfd90c57a4aa3291e4c97e7f8f4d68e1552ba7c40b9bb5d483&width=1200&height=1200&smart=true"
+                            alt="rostro mujer joven">
+                        <h5>Stellar blade</h5>
+                    </div>
+                    <div>
+                        <p>28/04</p>
+                        <img src="https://assets-prd.ignimgs.com/2021/08/13/el-shaddai-button-2021-1628891949779.jpg"
+                            alt="guerrero con espada magica">
+                        <h5>El Shaddai</h5>
+                    </div>
+                </aside>
             </section>
-            <section class="novedades">
-                <h2>Enterate de las ultimas novedades del mundo del gaming</h2>
-                <!-- seis cards horizontales para noticias -->
-                <section class="novedades-container">
-                    <div class="card mb-3 noticia-uno" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <a
-                                    href="https://www.infobae.com/malditos-nerds/2024/03/22/dragons-dogma-2-rompe-records-en-steam-a-pesar-de-la-controversia-por-sus-microtransacciones/"><img
-                                        src="./resources/dd2.jpg" class="img-fluid rounded-start"
-                                        alt="caballero con armadura"></a>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <a
-                                        href="https://www.infobae.com/malditos-nerds/2024/03/22/dragons-dogma-2-rompe-records-en-steam-a-pesar-de-la-controversia-por-sus-microtransacciones/">
-                                        <h5 class="card-title">Dragon Dogma 2 - Record y polemica</h5>
-                                    </a>
-                                    <p class="card-text">El flamante RPG se convirtió en el single player más
-                                        exitoso en la historia de la compañía, pero persiste la polémica por las
-                                        compras in-game</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3 noticia-dos" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <a href="https://www.streetfighter.com/6/es-us/character/ed"><img
-                                        src="./resources/ed sf6.jpg" class="img-fluid rounded-start"
-                                        alt="personaje Ed"></a>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <a href="https://www.streetfighter.com/6/es-us/character/ed">
-                                        <h5 class="card-title">Street Fighter 6 - Nuevo personaje</h5>
-                                    </a>
-                                    <p class="card-text">Ed: Un joven con Psycho Power que maduró a la
-                                        fuerza por los experimentos de Shadaloo.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3 noticia-tres" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <a
-                                    href="https://overwatch.blizzard.com/es-es/news/24072105/ahonda-en-la-competici%C3%B3n-en-la-temporada-10-de-overwatch-2/"><img
-                                        src="./resources/moira.jpeg" class="img-fluid rounded-start" alt="moira"></a>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <a
-                                        href="https://overwatch.blizzard.com/es-es/news/24072105/ahonda-en-la-competici%C3%B3n-en-la-temporada-10-de-overwatch-2/">
-                                        <h5 class="card-title">Overwatch 2 - season 10</h5>
-                                    </a>
-                                    <p class="card-text">Descubre un mundo del revés en una aventura con la realidad
-                                        alterada: Alterwatch.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3 noticia-cuatro" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <a
-                                    href="https://es.ign.com/stardew-valley/202185/news/la-16-de-stardew-valley-esta-repleta-de-contenido-pero-los-fans-solo-quieren-una-cosa"><img
-                                        src="./resources/stardew.png" class="img-fluid rounded-start"
-                                        alt="casa y granja del juego"></a>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <a
-                                        href="https://es.ign.com/stardew-valley/202185/news/la-16-de-stardew-valley-esta-repleta-de-contenido-pero-los-fans-solo-quieren-una-cosa">
-                                        <h5 class="card-title">Stardew Valley - Novedades</h5>
-                                    </a>
-                                    <p class="card-text">Lanza una nueva actualización con más contenido para los
-                                        usuarios de PC.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3 noticia-cinco" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <a
-                                    href="https://www.vidaextra.com/series/definitivamente-creo-que-podria-funcionar-rod-fergusson-jefe-diablo-desearia-que-existiese-serie-television-saga"><img
-                                        src="https://blz-contentstack-images.akamaized.net/v3/assets/blt77f4425de611b362/bltb6866a66b7a9e0f4/659ef28ffad2f45d1d6c6112/D4_S3_Homepage-Feature_Key-Art_960x540.webp?"
-                                        class="img-fluid rounded-start" alt="constructo contra hechicera"></a>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <a
-                                        href="https://www.vidaextra.com/series/definitivamente-creo-que-podria-funcionar-rod-fergusson-jefe-diablo-desearia-que-existiese-serie-television-saga">
-                                        <h5 class="card-title">Diablo IV - Se viene una serie?</h5>
-                                    </a>
-                                    <p class="card-text">Blizzard habla claro sobre una serie o pelicula de Diablo
-                                        tras el éxito de Fallout</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3 noticia-seis" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <a href="https://es.bandainamcoent.eu/elden-ring/elden-ring/shadow-of-the-erdtree"><img
-                                        src="./resources/elden ring.png" class="img-fluid rounded-start"
-                                        alt="caballero cayendo"></a>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <a href="https://es.bandainamcoent.eu/elden-ring/elden-ring/shadow-of-the-erdtree">
-                                        <h5 class="card-title">Elden Ring - 'Shadow of the Erdtree'</h5>
-                                    </a>
-                                    <p class="card-text">El primer DLC de Elden Ring, 'Shadow of the Erdtree' se
-                                        revela en un trailer siniestro y espectacular que anuncia fecha.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- area de proximos lanzamientos -->
-                    <aside class="proximos-lanzamientos">
-                        <div class="proximos-lanzamientos-titulo">
-                            <h4>Proximos Lanzamientos</h4>
-                        </div>
-                        <div>
-                            <p>26/04</p>
-                            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202402/2706/762d22b1f0506582e0c2be6d6f1fb08ef1e6917ce8d25618.png?w=440"
-                                alt="tanque animado en desierto">
-                            <h5>Sand land</h5>
-                        </div>
-                        <div>
-                            <p>26/04</p>
-                            <img src="https://img.asmedia.epimg.net/resizer/v2/WTHUF73WHBB7HE6KOBQITP6R3E.jpeg?auth=bc3dddbc08c7a3dfd90c57a4aa3291e4c97e7f8f4d68e1552ba7c40b9bb5d483&width=1200&height=1200&smart=true"
-                                alt="rostro mujer joven">
-                            <h5>Stellar blade</h5>
-                        </div>
-                        <div>
-                            <p>28/04</p>
-                            <img src="https://assets-prd.ignimgs.com/2021/08/13/el-shaddai-button-2021-1628891949779.jpg"
-                                alt="guerrero con espada magica">
-                            <h5>El Shaddai</h5>
-                        </div>
-                    </aside>
-                </section>
+        </section>
+        <h2 id="analisis">Lo bueno y lo malo de los ultimos juegos</h2>
+        <section class="analisis">
+            <section class="analisis-menu">
+                <div class="analisis-menu-titulo">
+                    <h4>Analisis recientes</h4>
+                </div>
+                <div>
+                    <a href="#primer-analisis">
+                        <h5>Alan wake 2</h5>
+                    </a>
+                </div>
+                <div>
+                    <a href="#segundo-analisis">
+                        <h5>Starfield</h5>
+                    </a>
+                </div>
+                <div>
+                    <a href="#tercer-analisis">
+                        <h5>Tekken 8</h5>
+                    </a>
+                </div>
             </section>
-            <section class="analisis">
-                <h2>Lo bueno y lo malo de los ultimos juegos</h2>
+            <section class="analisis-descripciones">
                 <!-- tres reviews, comenzando con cards y luego la descripcion  -->
-                <div class="card mb-3" style="max-width: 540px;">
+                <div class="card mb-3" style="max-width: 540px;" id="primer-analisis">
                     <div class="row g-0">
                         <div class="col-md-6">
                             <img src="./resources/alanwake.png" class="img-fluid rounded-start" alt="fbi en el bosque">
@@ -245,11 +267,14 @@
                     maiores, iusto possimus perferendis explicabo ullam excepturi rem asperiores aperiam beatae! Ea
                     alias ab
                     reprehenderit quod molestias eaque voluptatum!</p>
-                <div class="card mb-3" style="max-width: 540px;">
+                <a href="#analisis" class="descripcion-volver">
+                    <p>Volver</p>
+                </a>
+                <div class="card mb-3" style="max-width: 540px;" id="segundo-analisis">
                     <div class="row g-0">
                         <div class="col-md-6">
-                            <img src="./resources/starfield.jpg"
-                                class="img-fluid rounded-start" alt="nave espacial viajando">
+                            <img src="./resources/starfield.jpg" class="img-fluid rounded-start"
+                                alt="nave espacial viajando">
                         </div>
                         <div class="col-md-6">
                             <div class="card-body calificacion">
@@ -283,7 +308,10 @@
                     rem voluptatibus eum nobis veritatis alias quasi, ducimus velit. Quidem provident error
                     reprehenderit
                     itaque?</p>
-                <div class="card mb-3" style="max-width: 540px;">
+                <a href="#analisis" class="descripcion-volver">
+                    <p>Volver</p>
+                </a>
+                <div class="card mb-3" style="max-width: 540px;" id="tercer-analisis">
                     <div class="row g-0">
                         <div class="col-md-6">
                             <img src="./resources/tekken8.jpg" class="img-fluid rounded-start"
@@ -323,23 +351,19 @@
                     laboriosam quia provident accusamus a voluptate dolorem pariatur quas aliquid? Adipisci quo minima
                     dolorum non earum facere, ab libero saepe quis, labore commodi, praesentium neque iure dolorem
                     dignissimos quasi voluptatibus omnis?</p>
+                <a href="#analisis" class="descripcion-volver">
+                    <p>Volver</p>
+                </a>
             </section>
         </section>
     </main>
     <footer>
         <p>Seguinos en nuestras redes sociales</p>
         <ul>
-            <li><a href="#"><img
-                        src="./resources/x.jpg"
-                        alt="logo de equis"></a></li>
-            <li><a href="#"><img src="./resources/logo-facebook.jpg"
-                        alt="logo de facebook"></a></li>
-            <li><a href="#"><img
-                        src="./resources/logo-instagram.jpg"
-                        alt="logo de instagram"></a></li>
-            <li><a href="#"><img
-                        src="./resources/logo-tiktok.jpg"
-                        alt="logo de tiktok"></a></li>
+            <li><a href="#"><img src="./resources/x.jpg" alt="logo de equis"></a></li>
+            <li><a href="#"><img src="./resources/logo-facebook.jpg" alt="logo de facebook"></a></li>
+            <li><a href="#"><img src="./resources/logo-instagram.jpg" alt="logo de instagram"></a></li>
+            <li><a href="#"><img src="./resources/logo-tiktok.jpg" alt="logo de tiktok"></a></li>
         </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
