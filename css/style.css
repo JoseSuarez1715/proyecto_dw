@@ -20,7 +20,7 @@ p {
   font-size: 1.2rem; }
 
 .pagina-fondo, .pagina-index, .pagina-esports, .pagina-galeria, .pagina-nosotros, .pagina-contacto {
-  background-image: url("../../resources/patron-final.jpg");
+  background-image: url("../resources/patron-final.jpg");
   background-size: 100%; }
 
 .potg-grid, .pagina-esports .main-esports .potg .jugadas-container-shooter, .pagina-esports .main-esports .potg .jugadas-container-moba, .pagina-esports .main-esports .potg .jugadas-container-fighting {
@@ -157,7 +157,7 @@ h4 {
 
 footer {
   height: 150px;
-  background-image: url("../../resources/patron-veinte.jpg");
+  background-image: url("../resources/patron-veinte.jpg");
   background-size: 50%;
   box-shadow: 0 0 20px white; }
   footer p {
