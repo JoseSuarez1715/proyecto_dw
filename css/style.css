@@ -584,15 +584,15 @@ footer {
     height: 300px; }
 
 @media (max-width: 1200px) {
-  .main-nosotros .imagen-principal {
+  .pagina-nosotros .main-nosotros .imagen-principal {
     width: 90%; } }
 
 @media (max-width: 675px) {
-  .main-nosotros .imagen-principal {
+  .pagina-nosotros .main-nosotros .imagen-principal {
     width: 100%; } }
 
 @media (max-width: 426px) {
-  .main-nosotros iframe {
+  .pagina-nosotros .main-nosotros iframe {
     width: 85%;
     height: auto; } }
 
